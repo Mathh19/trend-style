@@ -12,7 +12,7 @@ const keaniaOne = Keania_One({
 
 export const Header = () => {
   return (
-    <header className="flex fixed w-full bg-white items-center justify-between px-10 py-3">
+    <header className="flex bg-white items-center justify-between px-10 py-3">
       <div className="flex items-center gap-14">
         <p className={`${keaniaOne.className} text-4xl max-sm:hidden`}>
           Trend Styles
