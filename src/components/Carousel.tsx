@@ -23,11 +23,8 @@ export const Carousel = () => {
   };
 
   return (
-    <div className="flex items-center max-w-[1440px] w-full bg-red-500 m-auto relative group">
-      <img
-        src={`${images[currentIndex].url}`}
-        className="w-full duration-500 brightness-75"
-      />
+    <div className="flex items-center max-w-[1440px] w-full m-auto relative group">
+      <img src={`${images[currentIndex].url}`} className="w-full" />
       <button
         onClick={() => handleControllSlide('prev')}
         className={`${
