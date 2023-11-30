@@ -1,8 +1,9 @@
 import { Keania_One } from 'next/font/google';
 import Image from 'next/image';
-import { FiUser, FiShoppingCart, FiHeart } from 'react-icons/fi';
+import { FiShoppingCart, FiHeart } from 'react-icons/fi';
 
 import { MenuLinks } from '@components/MenuLinks/MenuLinks';
+import { DropdownUser } from '@components/UI/DropdownUser';
 
 const keaniaOne = Keania_One({
   weight: '400',
@@ -29,7 +30,7 @@ export const Header = () => {
         </div>
       </div>
       <div className="flex gap-9 text-xl max-sm:gap-4">
-        <FiUser />
+        <DropdownUser />
         <FiHeart />
         <FiShoppingCart />
         <div className="hidden max-[914px]:block">

@@ -5,6 +5,18 @@ module.exports = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}'
   ],
-  theme: {},
+  theme: {
+    extend: {
+      keyframes: {
+        dropdown: {
+          '0%': { opacity: 0, transform: 'translateY(-0.5rem)' },
+          '100%': { opacity: 1, transform: 'translateY(0.5rem)' }
+        }
+      },
+      animation: {
+        dropdown: 'dropdown 400ms ease-in-out'
+      }
+    }
+  },
   plugins: []
 };
