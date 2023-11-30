@@ -23,7 +23,7 @@ export const Product = ({ name, rate, price, discount, img }: ProductProps) => {
           <TbShoppingCartPlus />
         </button>
       </div>
-      <img src={img[0]} alt="description" className="w-full h-full" />
+      <img src={img[0]} alt={name} className="w-full h-full" />
       <div className="absolute bg-white w-full bottom-0 p-2 space-y-1">
         <div className="flex justify-between">
           <p className="text-left">{name}</p>
