@@ -1,0 +1,24 @@
+[
+  {
+    "name": "Emotional heart ring",
+    "price": 12,
+    "img": [
+      "./products/product-2.png"
+    ],
+    "rate": 663
+  },
+  {
+    "name": "Chocker",
+    "price": 15.5,
+    "img": [
+      "./products/product-1.png"
+    ],
+    "rate": 1257
+  },
+  {
+    "name": "Black Skull Rivets Rings Handcuff Gothic",
+    "price": 21.8,
+    "img": ["./products/product-26.png"],
+    "rate": 682
+  }
+]

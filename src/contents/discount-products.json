@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Heart print sweatshirt",
+    "price": 119.90,
+    "discount": 30,
+    "img": [
+      "./products/product-18.png",
+      "./products/product-17.png"
+    ],
+    "rate": 333
+  },
+  {
+    "name": "Long-sleeve shirt - faces",
+    "price": 85,
+    "discount": 20,
+    "img": [
+      "./products/product-20.png",
+      "./products/product-19.png"
+    ],
+    "rate": 555
+  },
+  {
+    "name": "Beige Coat",
+    "price": 100,
+    "discount": 50,
+    "img": ["./products/product-6.png"],
+    "rate": 777
+  }
+]

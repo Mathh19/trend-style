@@ -1,0 +1,23 @@
+[
+  {
+    "name": "T-shirt - alien",
+    "price": 23,
+    "img": ["./products/product-7.png"],
+    "rate": 587
+  },
+  {
+    "name": "T-shirt - Skull hands",
+    "price": 23,
+    "img": [
+      "./products/product-11.png",
+      "./products/product-12.png"
+    ],
+    "rate": 563
+  },
+  {
+    "name": "T-shirt - Black",
+    "price": 23,
+    "img": ["./products/product-8.png"],
+    "rate": 982
+  }
+]

@@ -1,0 +1,33 @@
+[
+  {
+    "name": "Vans",
+    "price": 81.3,
+    "discount": 10,
+    "img": [
+      "./products/product-13.png",
+      "./products/product-14.png"
+    ],
+    "rate": 443
+  },
+  {
+    "name": "Black boots",
+    "price": 75.5,
+    "img": [
+      "./products/product-5.png"
+    ],
+    "rate": 1000
+  },
+  {
+    "name": "Ankle boots",
+    "price": 77.8,
+    "discount": 15,
+    "img": ["./products/product-4.png"],
+    "rate": 682
+  },
+  {
+    "name": "Black leather ankle boots",
+    "price": 90.9,
+    "img": ["./products/product-3.png"],
+    "rate": 1356
+  }
+]
