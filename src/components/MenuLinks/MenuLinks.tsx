@@ -22,6 +22,7 @@ export const MenuLinks = () => {
       </ul>
       <button
         onClick={() => setOpen(!open)}
+        aria-label="open menu"
         className="hidden max-[914px]:block relative z-50"
       >
         {!open ? <FiMenu /> : <IoMdClose />}

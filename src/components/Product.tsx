@@ -16,10 +16,16 @@ export const Product = ({ name, rate, price, discount, img }: ProductProps) => {
   return (
     <div className="relative w-72 h-92 border drop-shadow-md">
       <div className="absolute flex w-full justify-between p-2">
-        <button className="text-2xl text-red-500">
+        <button
+          aria-label="add to your wish list"
+          className="text-2xl text-red-500"
+        >
           <IoIosHeartEmpty />
         </button>
-        <button className="bg-white p-1 rounded-md text-2xl">
+        <button
+          aria-label="add to shopping cart"
+          className="bg-white p-1 rounded-md text-2xl"
+        >
           <TbShoppingCartPlus />
         </button>
       </div>

@@ -65,6 +65,7 @@ export const Footer = () => {
             />
             <button
               type="submit"
+              aria-label="Submit email for sending offers"
               onClick={handleSubmit}
               className="absolute flex items-center justify-center bottom-0 right-0 text-white bg-black p-1.5 h-10 w-10"
             >

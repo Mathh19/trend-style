@@ -3,7 +3,16 @@
 import { useState } from 'react';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 
-const images = [{ url: './bg-carousel-1.png' }, { url: './bg-carousel-2.png' }];
+const images = [
+  {
+    url: './bg-carousel-1.png',
+    description: 'Image informing new products with a 30 to 50 percent discount'
+  },
+  {
+    url: './bg-carousel-2.png',
+    description: 'Image informing new collections in store'
+  }
+];
 
 export const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -24,9 +33,14 @@ export const Carousel = () => {
 
   return (
     <div className="flex items-center max-w-[1440px] w-full m-auto relative group">
-      <img src={`${images[currentIndex].url}`} className="w-full" />
+      <img
+        src={`${images[currentIndex].url}`}
+        className="w-full"
+        alt={images[currentIndex].description}
+      />
       <button
         onClick={() => handleControllSlide('prev')}
+        aria-label="prev to image"
         className={`${
           currentIndex === 0 ? 'hidden' : 'block'
         } absolute left-2 text-white text-4xl rounded-full duration-200 hover:bg-black/40`}
@@ -35,6 +49,7 @@ export const Carousel = () => {
       </button>
       <button
         onClick={() => handleControllSlide('next')}
+        aria-label="next to image"
         className={` ${
           currentIndex === images.length - 1 ? 'hidden' : 'block'
         } absolute right-2 text-white text-4xl rounded-full duration-200 hover:bg-black/40`}
