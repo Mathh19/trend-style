@@ -33,7 +33,7 @@ export const MenuLinks = () => {
       >
         <ul className="relative flex flex-col justify-center items-center gap-5 text-lg z-50">
           {links.map((link) => (
-            <Links key={link} link={`#${link}`} onClick={() => setOpen(false)}>
+            <Links key={link} link={`${link}`} onClick={() => setOpen(false)}>
               {link}
             </Links>
           ))}
