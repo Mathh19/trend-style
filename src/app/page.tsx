@@ -1,3 +1,4 @@
+import { About } from '@components/About';
 import { Carousel } from '@components/Carousel';
 import { ContainerProducts } from '@components/ContainerProducts';
 
@@ -16,6 +17,7 @@ export default function Home() {
       <ContainerProducts title="Main discounts" products={discountProducts} />
       <ContainerProducts title="Shoes" products={shoes} />
       <ContainerProducts title="Accessories" products={accessories} />
+      <About />
     </>
   );
 }
