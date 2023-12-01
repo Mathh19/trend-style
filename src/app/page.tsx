@@ -13,10 +13,12 @@ export default function Home() {
       <section>
         <Carousel />
       </section>
-      <ContainerProducts title="New Arrivals" products={newProducts} />
-      <ContainerProducts title="Main discounts" products={discountProducts} />
-      <ContainerProducts title="Shoes" products={shoes} />
-      <ContainerProducts title="Accessories" products={accessories} />
+      <section id="Products">
+        <ContainerProducts title="New Arrivals" products={newProducts} />
+        <ContainerProducts title="Main discounts" products={discountProducts} />
+        <ContainerProducts title="Shoes" products={shoes} />
+        <ContainerProducts title="Accessories" products={accessories} />
+      </section>
       <About />
     </>
   );

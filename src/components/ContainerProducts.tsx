@@ -10,7 +10,7 @@ export const ContainerProducts = ({
   products
 }: ContainerProductsProps) => {
   return (
-    <section className="text-center space-y-7 py-11">
+    <div className="text-center space-y-7 py-11">
       <h2 className="text-4xl">{title}</h2>
       <div className="flex justify-around w-full flex-wrap gap-16">
         {products.map((product, index) => (
@@ -25,6 +25,6 @@ export const ContainerProducts = ({
           />
         ))}
       </div>
-    </section>
+    </div>
   );
 };
