@@ -1,5 +1,6 @@
 [
   {
+    "id": 4,
     "name": "Heart print sweatshirt",
     "price": 119.90,
     "discount": 30,
@@ -10,6 +11,7 @@
     "rate": 333
   },
   {
+    "id": 5,
     "name": "Long-sleeve shirt - faces",
     "price": 85,
     "discount": 20,
@@ -20,6 +22,7 @@
     "rate": 555
   },
   {
+    "id": 6,
     "name": "Beige Coat",
     "price": 100,
     "discount": 50,

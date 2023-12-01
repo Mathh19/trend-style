@@ -16,6 +16,7 @@ export const ContainerProducts = ({
         {products.map((product, index) => (
           <Product
             key={index}
+            id={product.id}
             name={product.name}
             price={product.price}
             rate={product.rate}
