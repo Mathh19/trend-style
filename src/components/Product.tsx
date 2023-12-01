@@ -23,26 +23,26 @@ export const Product = ({
   img
 }: ProductProps) => {
   return (
-    <Link href={`./product/${id}`}>
-      <div className="relative w-72 h-92 border drop-shadow-md">
-        <div className="absolute flex w-full justify-between p-2">
-          <button
-            aria-label="add to your wish list"
-            className="text-2xl text-red-500"
-          >
-            <IoIosHeartEmpty />
-          </button>
-          <button
-            aria-label="add to shopping cart"
-            className="bg-white p-1 rounded-md text-2xl"
-          >
-            <TbShoppingCartPlus />
-          </button>
-        </div>
-        <img src={img[0]} alt={name} className="w-full h-full" />
+    <div className="relative w-72 h-92 border drop-shadow-md">
+      <div className="absolute flex w-full justify-between p-2">
+        <button
+          aria-label="add to your wish list"
+          className="text-2xl text-red-500"
+        >
+          <IoIosHeartEmpty />
+        </button>
+        <button
+          aria-label="add to shopping cart"
+          className="bg-white p-1 rounded-md text-2xl"
+        >
+          <TbShoppingCartPlus />
+        </button>
+      </div>
+      <img src={img[0]} alt={name} className="w-full h-full" />
+      <Link href={`./product/${id}`} className="group">
         <div className="absolute bg-white w-full bottom-0 p-2 space-y-1">
           <div className="flex justify-between">
-            <p className="text-left">{name}</p>
+            <p className="text-left group-hover:underline">{name}</p>
             <div className="flex gap-2.5">
               <p className={`${discount && 'line-through'}`}>${price}</p>
               {discount && (
@@ -59,7 +59,7 @@ export const Product = ({
             <span className="ml-1 text-xs text-zinc-600">({rate})</span>
           </div>
         </div>
-      </div>
-    </Link>
+      </Link>
+    </div>
   );
 };
