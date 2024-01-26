@@ -1,7 +1,11 @@
+'use client';
 import Link from 'next/link';
-import { IoIosHeartEmpty } from 'react-icons/io';
+import { useContext, useEffect, useState } from 'react';
+import { IoIosHeartEmpty, IoMdHeart } from 'react-icons/io';
 import { MdOutlineStar } from 'react-icons/md';
 import { TbShoppingCartPlus } from 'react-icons/tb';
+
+import { WishlistContext } from '@contexts/WishlistContext/WishlistContext';
 
 import { calculateDiscount } from '@utils/calculate-discount';
 
@@ -22,15 +26,37 @@ export const Product = ({
   discount,
   img
 }: ProductProps) => {
+  const { products, addProducts, removeProduct } = useContext(WishlistContext);
+  const [toggle, setToggle] = useState(false);
+
+  const handleToggle = () => {
+    setToggle(!toggle);
+    toggle
+      ? removeProduct(id)
+      : addProducts({ id, img, name, price, rate, discount });
+  };
+
+  useEffect(() => {
+    const hasProduct = products.find((product) => product.id === id);
+    hasProduct ? setToggle(true) : setToggle(false);
+  }, [id, products]);
+
   return (
     <div className="relative w-72 h-92 border drop-shadow-md">
       <div className="absolute flex w-full justify-between p-2">
-        <button
+        <div
           aria-label="add to your wish list"
-          className="text-2xl text-red-500"
+          className="relative text-2xl text-red-500"
         >
-          <IoIosHeartEmpty />
-        </button>
+          <input
+            type="checkbox"
+            id="wishlist"
+            checked={toggle}
+            onChange={handleToggle}
+            className="absolute inset-0 opacity-0 cursor-pointer"
+          />
+          {toggle ? <IoMdHeart /> : <IoIosHeartEmpty />}
+        </div>
         <button
           aria-label="add to shopping cart"
           className="bg-white p-1 rounded-md text-2xl"
