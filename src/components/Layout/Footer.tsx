@@ -20,7 +20,7 @@ export const Footer = () => {
 
   return (
     <footer id="Contact">
-      <header className="flex flex-wrap gap-9 justify-between items-center text-center border-b border-black p-10 max-sm:justify-center">
+      <header className="flex bg-white text-black flex-wrap gap-9 justify-between items-center text-center border-b border-black p-10 max-sm:justify-center">
         <h2 className={`${keaniaOne.className} text-5xl`}>Trend Styles</h2>
         <ul className="flex gap-7 text-4xl">
           <li>
@@ -34,7 +34,7 @@ export const Footer = () => {
           </li>
         </ul>
       </header>
-      <div className="flex w-full justify-between gap-9 p-9 flex-wrap">
+      <div className="flex bg-white text-black w-full justify-between gap-9 p-9 flex-wrap">
         <div className="space-y-3">
           <h3 className="text-xl font-bold">Contact us</h3>
           <ul className="space-y-2">
