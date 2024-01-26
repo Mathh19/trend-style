@@ -8,7 +8,8 @@
       "./products/product-13.png",
       "./products/product-14.png"
     ],
-    "rate": 443
+    "rate": 443,
+    "category": "shoes"
   },
   {
     "id": 12,
@@ -17,7 +18,8 @@
     "img": [
       "./products/product-5.png"
     ],
-    "rate": 1000
+    "rate": 1000,
+    "category": "shoes"
   },
   {
     "id": 13,
@@ -25,13 +27,15 @@
     "price": 77.8,
     "discount": 15,
     "img": ["./products/product-4.png"],
-    "rate": 682
+    "rate": 682,
+    "category": "shoes"
   },
   {
     "id": 14,
     "name": "Black leather ankle boots",
     "price": 90.9,
     "img": ["./products/product-3.png"],
-    "rate": 1356
+    "rate": 1356,
+    "category": "shoes"
   }
 ]

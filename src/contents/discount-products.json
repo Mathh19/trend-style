@@ -8,7 +8,8 @@
       "./products/product-18.png",
       "./products/product-17.png"
     ],
-    "rate": 333
+    "rate": 333,
+    "category": "sweatshirt"
   },
   {
     "id": 5,
@@ -19,7 +20,8 @@
       "./products/product-20.png",
       "./products/product-19.png"
     ],
-    "rate": 555
+    "rate": 555,
+    "category": "shirt"
   },
   {
     "id": 6,
@@ -27,6 +29,7 @@
     "price": 100,
     "discount": 50,
     "img": ["./products/product-6.png"],
-    "rate": 777
+    "rate": 777,
+    "category": "coat"
   }
 ]

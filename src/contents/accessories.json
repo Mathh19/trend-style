@@ -6,7 +6,8 @@
     "img": [
       "./products/product-2.png"
     ],
-    "rate": 663
+    "rate": 663,
+    "category": "accessorie"
   },
   {
     "id": 2,
@@ -15,13 +16,15 @@
     "img": [
       "./products/product-1.png"
     ],
-    "rate": 1257
+    "rate": 1257,
+    "category": "accessorie"
   },
   {
     "id": 3,
     "name": "Black Skull Rivets Rings Handcuff Gothic",
     "price": 21.8,
     "img": ["./products/product-26.png"],
-    "rate": 682
+    "rate": 682,
+    "category": "accessorie"
   }
 ]

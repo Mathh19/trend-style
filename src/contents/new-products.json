@@ -4,7 +4,8 @@
     "name": "T-shirt - alien",
     "price": 23,
     "img": ["./products/product-7.png"],
-    "rate": 587
+    "rate": 587,
+    "category": "shirt"
   },
   {
     "id": 9,
@@ -14,13 +15,15 @@
       "./products/product-11.png",
       "./products/product-12.png"
     ],
-    "rate": 563
+    "rate": 563,
+    "category": "shirt"
   },
   {
     "id": 10,
     "name": "T-shirt - Black",
     "price": 23,
     "img": ["./products/product-8.png"],
-    "rate": 982
+    "rate": 982,
+    "category": "shirt"
   }
 ]
