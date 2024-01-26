@@ -13,7 +13,7 @@ const keaniaOne = Keania_One({
 
 export const Header = () => {
   return (
-    <header className="flex bg-white items-center justify-between px-10 py-3">
+    <header className="flex text-black bg-white items-center justify-between px-10 py-3">
       <div className="flex items-center gap-14">
         <Link href="/">
           <p className={`${keaniaOne.className} text-4xl max-sm:hidden`}>
