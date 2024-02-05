@@ -7,13 +7,14 @@ import { TbShoppingCartPlus } from 'react-icons/tb';
 
 import { WishlistContext } from '@contexts/WishlistContext/WishlistContext';
 
-import { calculateDiscount } from '@utils/calculate-discount';
+import { Price } from './UI/Price';
 
 export type ProductProps = {
   id: number;
   name: string;
   rate: number;
   price: number;
+  details?: string;
   discount?: number;
   img: string[];
 };
@@ -69,14 +70,7 @@ export const Product = ({
         <div className="absolute bg-white w-full bottom-0 p-2 space-y-1">
           <div className="flex justify-between">
             <p className="text-left group-hover:underline">{name}</p>
-            <div className="flex gap-2.5">
-              <p className={`${discount && 'line-through'}`}>${price}</p>
-              {discount && (
-                <span className="text-red-700">
-                  ${calculateDiscount(price, discount)}
-                </span>
-              )}
-            </div>
+            <Price price={price} discount={discount} />
           </div>
           <div className="flex items-center text-yellow-500">
             {[...Array(5)].map((_, index) => {
