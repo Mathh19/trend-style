@@ -1,4 +1,4 @@
-import { ProductProps } from '@components/Product';
+import { ProductProps } from '@shared-types/product';
 
 export type WishlistContextProps = {
   products: ProductProps[];
