@@ -1,4 +1,6 @@
-import { Product, ProductProps } from './Product';
+import { ProductProps } from '@shared-types/product';
+
+import { Product } from './Product';
 
 type ContainerProductsProps = {
   title?: string;
@@ -14,15 +16,7 @@ export const ContainerProducts = ({
       {title && <h2 className="text-4xl">{title}</h2>}
       <div className="flex justify-around w-full flex-wrap gap-16">
         {products.map((product, index) => (
-          <Product
-            key={index}
-            id={product.id}
-            name={product.name}
-            price={product.price}
-            rate={product.rate}
-            img={product.img}
-            discount={product.discount}
-          />
+          <Product key={index} product={product} />
         ))}
       </div>
     </div>
