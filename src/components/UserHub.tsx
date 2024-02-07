@@ -18,15 +18,15 @@ export const UserHub = () => {
 
   return (
     <>
-      <Link title="profile" href="/">
+      <Link title="profile" href="/" className="flex">
         <FiUser size={22} />
       </Link>
-      <Link title="my wishlist" href="/wishlist">
+      <Link title="my wishlist" href="/wishlist" className="flex">
         <CustomBadge badgeContent={countWishlist}>
           <FiHeart size={22} />
         </CustomBadge>
       </Link>
-      <Link title="shopping cart" href="/">
+      <Link title="shopping cart" href="/" className="flex">
         <FiShoppingCart size={22} />
       </Link>
     </>
