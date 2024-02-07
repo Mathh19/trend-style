@@ -8,7 +8,7 @@ import { VariantProps, tv } from 'tailwind-variants';
 
 import { ProductProps } from '@shared-types/product';
 
-import { ToolTip } from './ToolTip';
+import { CustomTooltip } from './CustomTooltip';
 
 const inputHeart = tv({
   base: 'relative text-2xl text-red-500 flex items-center justify-center w-8 h-8',
@@ -44,7 +44,7 @@ export const AddWishlist = ({ product, background }: AddWishlistProps) => {
   }, [product.id, products]);
 
   return (
-    <ToolTip title="add to wishlist">
+    <CustomTooltip title="add to wishlist">
       <div
         aria-label="add to your wish list"
         className={inputHeart({
@@ -61,6 +61,6 @@ export const AddWishlist = ({ product, background }: AddWishlistProps) => {
         />
         {toggle ? <IoMdHeart /> : <IoIosHeartEmpty />}
       </div>
-    </ToolTip>
+    </CustomTooltip>
   );
 };
