@@ -54,7 +54,7 @@ export const AddWishlist = ({ product, background }: AddWishlistProps) => {
       >
         <input
           type="checkbox"
-          id="wishlist"
+          id={`wishlist-${product.id}`}
           checked={toggle}
           onChange={handleToggle}
           className="absolute inset-0 opacity-0 cursor-pointer"

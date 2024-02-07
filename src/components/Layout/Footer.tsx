@@ -59,7 +59,9 @@ export const Footer = () => {
           <h3 className="text-xl font-bold">Subscriptions to offers</h3>
           <form className="relative w-full">
             <input
+              name="email"
               type="email"
+              autoComplete="email"
               placeholder="your email"
               className="w-full soutline-black border-2 border-black p-1.5"
             />
