@@ -29,6 +29,7 @@ type AddWishlistProps = {
 
 export const AddWishlist = ({ product, background }: AddWishlistProps) => {
   const { products, addProducts, removeProduct } = useContext(WishlistContext);
+  const [tooltipMessage, setTooltipMessage] = useState('add to wishlist');
   const [toggle, setToggle] = useState(false);
 
   const handleToggle = () => {
@@ -40,19 +41,25 @@ export const AddWishlist = ({ product, background }: AddWishlistProps) => {
     const hasProduct = products.find(
       (prevProduct) => prevProduct.id === product.id
     );
-    hasProduct ? setToggle(true) : setToggle(false);
+    if (hasProduct) {
+      setToggle(true);
+      setTooltipMessage('remove from your wish list.');
+    } else {
+      setToggle(false);
+      setTooltipMessage('add to your wish list.');
+    }
   }, [product.id, products]);
 
   return (
-    <CustomTooltip title="add to wishlist">
+    <CustomTooltip title={tooltipMessage}>
       <div
-        aria-label="add to your wish list"
         className={inputHeart({
           background,
           class: `${toggle && 'text-red-500'}`
         })}
       >
         <input
+          aria-label={tooltipMessage}
           type="checkbox"
           id={`wishlist-${product.id}`}
           checked={toggle}
