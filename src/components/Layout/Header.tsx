@@ -20,11 +20,12 @@ export const Header = () => {
             Trend Styles
           </p>
           <Image
-            className="hidden max-sm:block"
+            priority
             width={50}
             height={50}
             alt="Logo site"
             src="/logo.svg"
+            className="hidden w-[50px] h-[50px] max-sm:block"
           />
         </Link>
         <div className="max-[914px]:hidden">
