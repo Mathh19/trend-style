@@ -5,6 +5,7 @@ import { TbShoppingCartPlus } from 'react-icons/tb';
 import { ProductProps } from '@shared-types/product';
 
 import { AddWishlist } from './AddWishlist';
+import { Button } from './UI/Button';
 import { Price } from './UI/Price';
 
 export const Product = ({ product }: { product: ProductProps }) => {
@@ -12,12 +13,11 @@ export const Product = ({ product }: { product: ProductProps }) => {
     <div className="relative w-72 h-92 border drop-shadow-md">
       <div className="absolute flex w-full justify-between p-2">
         <AddWishlist product={product} />
-        <button
+        <Button
           aria-label="add to shopping cart"
-          className="bg-white p-1 rounded-md text-2xl"
-        >
-          <TbShoppingCartPlus />
-        </button>
+          className="bg-white p-1 rounded-md text-black text-2xl"
+          icon={TbShoppingCartPlus}
+        />
       </div>
       <img src={product.img[0]} alt={product.name} className="w-full h-full" />
       <Link href={`./product/${product.id}`} className="group">
