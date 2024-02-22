@@ -24,7 +24,8 @@ export const Colors = ({ colors }: ColorProps) => {
               className="peer appearance-none"
             />
             <span
-              className={`border border-black peer-checked:outline outline-1 peer-checked:outline-offset-2 w-6 h-6 rounded-full bg-[${color.hex}]`}
+              style={{ backgroundColor: color.hex }}
+              className={`border border-black peer-checked:outline outline-1 peer-checked:outline-offset-2 w-6 h-6 rounded-full`}
             ></span>
             <p className="block">{color.name}</p>
           </label>
