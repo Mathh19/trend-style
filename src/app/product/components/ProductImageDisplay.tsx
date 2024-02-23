@@ -66,18 +66,22 @@ export const ProductImageDisplay = ({
           className="rounded-xl"
         />
         <div className="absolute w-full flex justify-between px-2">
-          <button onClick={handlePrevImage} aria-label="see previous image">
-            <FiArrowLeftCircle
-              size={36}
-              className="fill-white opacity-75 stroke-1"
-            />
-          </button>
-          <button onClick={handleNextImage} aria-label="see later image">
-            <FiArrowRightCircle
-              size={36}
-              className="fill-white opacity-75 stroke-1"
-            />
-          </button>
+          {images.length > 1 && (
+            <>
+              <button onClick={handlePrevImage} aria-label="see previous image">
+                <FiArrowLeftCircle
+                  size={36}
+                  className="fill-white opacity-75 stroke-1"
+                />
+              </button>
+              <button onClick={handleNextImage} aria-label="see later image">
+                <FiArrowRightCircle
+                  size={36}
+                  className="fill-white opacity-75 stroke-1"
+                />
+              </button>
+            </>
+          )}
         </div>
       </div>
     </div>
