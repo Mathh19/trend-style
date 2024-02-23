@@ -5,8 +5,8 @@
     "price": 119.90,
     "discount": 30,
     "img": [
-      "./products/product-18.png",
-      "./products/product-17.png"
+      "/products/heart-print-sweatshirt-1.png",
+      "/products/heart-print-sweatshirt-2.png"
     ],
     "rate": 333,
     "category": "sweatshirt"
@@ -17,8 +17,8 @@
     "price": 85,
     "discount": 20,
     "img": [
-      "./products/product-20.png",
-      "./products/product-19.png"
+      "./products/long-sleeve-shirt-faces-1.png",
+      "./products/long-sleeve-shirt-faces-2.png"
     ],
     "rate": 555,
     "category": "shirt"
@@ -28,7 +28,7 @@
     "name": "Beige Coat",
     "price": 100,
     "discount": 50,
-    "img": ["./products/product-6.png"],
+    "img": ["./products/beige-coat.png"],
     "rate": 777,
     "category": "coat"
   }

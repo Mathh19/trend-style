@@ -1,19 +1,5 @@
 [
   {
-    "id": 1,
-    "name": "Emotional heart ring",
-    "price": 12,
-    "colors": [
-      {"name": "Black", "hex": "#000000"},
-      {"name":"White", "hex": "#ffffff"}
-    ],
-    "img": ["/products/product-2.png"],
-    "rate": 663,
-    "category": "accessorie",
-    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, eros a tincidunt varius, augue nisi blandit turpis, vel luctus justo turpis id orci.",
-    "sizes": ["S", "M", "L", "XL", "XXL"]
-  },
-  {
     "id": 2,
     "name": "Chocker",
     "price": 15.5,
@@ -21,11 +7,11 @@
       {"name": "Black", "hex": "#000000"},
       {"name":"White", "hex": "#ffffff"}
     ],
-    "img": ["/products/product-1.png"],
+    "img": ["/products/chocker.png"],
     "rate": 1257,
     "category": "accessorie",
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, eros a tincidunt varius, augue nisi blandit turpis, vel luctus justo turpis id orci.",
-    "sizes": ["S", "M", "L", "XL", "XXL"]
+    "sizes": ["S", "M", "L", "XL"]
   },
   {
     "id": 3,
@@ -35,11 +21,11 @@
       {"name": "Black", "hex": "#000000"},
       {"name":"White", "hex": "#ffffff"}
     ],
-    "img": ["/products/product-26.png"],
+    "img": ["/products/rings-gothic.png"],
     "rate": 682,
     "category": "accessorie",
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, eros a tincidunt varius, augue nisi blandit turpis, vel luctus justo turpis id orci.",
-    "sizes": ["S", "M", "L", "XL", "XXL"]
+    "sizes": ["S", "M", "L", "XL"]
   },
   {
     "id": 4,
@@ -50,11 +36,11 @@
       {"name":"White", "hex": "#ffffff"}
     ],
     "discount": 30,
-    "img": ["/products/product-18.png", "/products/product-17.png"],
+    "img": ["/products/heart-print-sweatshirt-1.png", "/products/heart-print-sweatshirt-2.png"],
     "rate": 333,
     "category": "sweatshirt",
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, eros a tincidunt varius, augue nisi blandit turpis, vel luctus justo turpis id orci.",
-    "sizes": ["S", "M", "L", "XL", "XXL"]
+    "sizes": ["S", "M", "L", "XL"]
   },
   {
     "id": 5,
@@ -65,11 +51,11 @@
       {"name":"White", "hex": "#ffffff"}
     ],
     "discount": 20,
-    "img": ["/products/product-20.png", "/products/product-19.png"],
+    "img": ["/products/long-sleeve-shirt-faces-1.png", "/products/long-sleeve-shirt-faces-2.png"],
     "rate": 555,
     "category": "shirt",
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, eros a tincidunt varius, augue nisi blandit turpis, vel luctus justo turpis id orci.",
-    "sizes": ["S", "M", "L", "XL", "XXL"]
+    "sizes": ["S", "M", "L", "XL"]
   },
   {
     "id": 6,
@@ -80,11 +66,11 @@
       {"name":"White", "hex": "#ffffff"}
     ],
     "discount": 50,
-    "img": ["/products/product-6.png"],
+    "img": ["/products/beige-coat.png"],
     "rate": 777,
     "category": "coat",
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, eros a tincidunt varius, augue nisi blandit turpis, vel luctus justo turpis id orci.",
-    "sizes": ["S", "M", "L", "XL", "XXL"]
+    "sizes": ["S", "M", "L", "XL"]
   },
   {
     "id": 8,
@@ -94,11 +80,11 @@
       {"name": "Black", "hex": "#000000"},
       {"name":"White", "hex": "#ffffff"}
     ],
-    "img": ["/products/product-7.png"],
+    "img": ["/products/t-shirt-alien.png"],
     "rate": 587,
     "category": "shirt",
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, eros a tincidunt varius, augue nisi blandit turpis, vel luctus justo turpis id orci.",
-    "sizes": ["S", "M", "L", "XL", "XXL"]
+    "sizes": ["S", "M", "L", "XL"]
   },
   {
     "id": 9,
@@ -108,11 +94,11 @@
       {"name": "Black", "hex": "#000000"},
       {"name":"White", "hex": "#ffffff"}
     ],
-    "img": ["/products/product-11.png", "/products/product-12.png"],
+    "img": ["/products/t-shirt-skull-hands-1.png", "/products/t-shirt-skull-hands-2.png"],
     "rate": 563,
     "category": "shirt",
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, eros a tincidunt varius, augue nisi blandit turpis, vel luctus justo turpis id orci.",
-    "sizes": ["S", "M", "L", "XL", "XXL"]
+    "sizes": ["S", "M", "L", "XL"]
   },
   {
     "id": 10,
@@ -122,11 +108,11 @@
       {"name": "Black", "hex": "#000000"},
       {"name":"White", "hex": "#ffffff"}
     ],
-    "img": ["/products/product-8.png"],
+    "img": ["/products/t-shirt-black.png"],
     "rate": 982,
     "category": "shirt",
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, eros a tincidunt varius, augue nisi blandit turpis, vel luctus justo turpis id orci.",
-    "sizes": ["S", "M", "L", "XL", "XXL"]
+    "sizes": ["S", "M", "L", "XL"]
   },
   {
     "id": 11,
@@ -137,25 +123,24 @@
       {"name":"White", "hex": "#ffffff"}
     ],
     "discount": 10,
-    "img": ["/products/product-13.png", "/products/product-14.png"],
+    "img": ["/products/vans-1.png", "/products/vans-2.png"],
     "rate": 443,
     "category": "shoes",
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, eros a tincidunt varius, augue nisi blandit turpis, vel luctus justo turpis id orci.",
-    "sizes": ["S", "M", "L", "XL", "XXL"]
+    "sizes": ["S", "M", "L", "XL"]
   },
   {
     "id": 12,
     "name": "Black boots",
     "price": 75.5,
     "colors": [
-      {"name": "Black", "hex": "#000000"},
-      {"name":"White", "hex": "#ffffff"}
+      {"name": "Black", "hex": "#000000"}
     ],
-    "img": ["/products/product-5.png"],
+    "img": ["/products/black-boots.png"],
     "rate": 1000,
     "category": "shoes",
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, eros a tincidunt varius, augue nisi blandit turpis, vel luctus justo turpis id orci.",
-    "sizes": ["S", "M", "L", "XL", "XXL"]
+    "sizes": ["S", "M", "L", "XL"]
   },
   {
     "id": 13,
@@ -166,24 +151,10 @@
       {"name":"White", "hex": "#ffffff"}
     ],
     "discount": 15,
-    "img": ["/products/product-4.png"],
+    "img": ["/products/ankle-boots.png"],
     "rate": 682,
     "category": "shoes",
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, eros a tincidunt varius, augue nisi blandit turpis, vel luctus justo turpis id orci.",
-    "sizes": ["S", "M", "L", "XL", "XXL"]
-  },
-  {
-    "id": 14,
-    "name": "Black leather ankle boots",
-    "price": 90.9,
-    "colors": [
-      {"name": "Black", "hex": "#000000"},
-      {"name":"White", "hex": "#ffffff"}
-    ],
-    "img": ["/products/product-3.png"],
-    "rate": 1356,
-    "category": "shoes",
-    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, eros a tincidunt varius, augue nisi blandit turpis, vel luctus justo turpis id orci.",
-    "sizes": ["S", "M", "L", "XL", "XXL"]
+    "sizes": ["S", "M", "L", "XL"]
   }
 ]

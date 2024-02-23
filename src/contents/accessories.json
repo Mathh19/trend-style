@@ -1,20 +1,10 @@
 [
   {
-    "id": 1,
-    "name": "Emotional heart ring",
-    "price": 12,
-    "img": [
-      "./products/product-2.png"
-    ],
-    "rate": 663,
-    "category": "accessorie"
-  },
-  {
     "id": 2,
     "name": "Chocker",
     "price": 15.5,
     "img": [
-      "./products/product-1.png"
+      "./products/chocker.png"
     ],
     "rate": 1257,
     "category": "accessorie"
@@ -23,7 +13,7 @@
     "id": 3,
     "name": "Black Skull Rivets Rings Handcuff Gothic",
     "price": 21.8,
-    "img": ["./products/product-26.png"],
+    "img": ["./products/rings-gothic.png"],
     "rate": 682,
     "category": "accessorie"
   }
