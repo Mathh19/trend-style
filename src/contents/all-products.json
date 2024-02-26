@@ -4,28 +4,24 @@
     "name": "Chocker",
     "price": 15.5,
     "colors": [
-      {"name": "Black", "hex": "#000000"},
-      {"name":"White", "hex": "#ffffff"}
+      {"name": "Black", "hex": "#000000"}
     ],
     "img": ["/products/chocker.png"],
     "rate": 1257,
     "category": "accessorie",
-    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, eros a tincidunt varius, augue nisi blandit turpis, vel luctus justo turpis id orci.",
-    "sizes": ["S", "M", "L", "XL"]
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, eros a tincidunt varius, augue nisi blandit turpis, vel luctus justo turpis id orci."
   },
   {
     "id": 3,
     "name": "Black Skull Rivets Rings Handcuff Gothic",
     "price": 21.8,
     "colors": [
-      {"name": "Black", "hex": "#000000"},
-      {"name":"White", "hex": "#ffffff"}
+      {"name": "Black", "hex": "#000000"}
     ],
     "img": ["/products/rings-gothic.png"],
     "rate": 682,
     "category": "accessorie",
-    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, eros a tincidunt varius, augue nisi blandit turpis, vel luctus justo turpis id orci.",
-    "sizes": ["S", "M", "L", "XL"]
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, eros a tincidunt varius, augue nisi blandit turpis, vel luctus justo turpis id orci."
   },
   {
     "id": 4,
@@ -62,8 +58,7 @@
     "name": "Beige Coat",
     "price": 100,
     "colors": [
-      {"name": "Black", "hex": "#000000"},
-      {"name":"White", "hex": "#ffffff"}
+      {"name": "Beige", "hex": "#DAB27D"}
     ],
     "discount": 50,
     "img": ["/products/beige-coat.png"],
@@ -119,15 +114,14 @@
     "name": "Vans",
     "price": 81.3,
     "colors": [
-      {"name": "Black", "hex": "#000000"},
-      {"name":"White", "hex": "#ffffff"}
+      {"name": "Black", "hex": "#000000"}
     ],
     "discount": 10,
     "img": ["/products/vans-1.png", "/products/vans-2.png"],
     "rate": 443,
     "category": "shoes",
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, eros a tincidunt varius, augue nisi blandit turpis, vel luctus justo turpis id orci.",
-    "sizes": ["S", "M", "L", "XL"]
+    "sizes": ["EUR36", "EUR37", "EUR38", "EUR39", "EUR40", "EUR41", "EUR42", "EUR43", "EUR44", "EUR45", "EUR46", "EUR47"]
   },
   {
     "id": 12,
@@ -140,21 +134,20 @@
     "rate": 1000,
     "category": "shoes",
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, eros a tincidunt varius, augue nisi blandit turpis, vel luctus justo turpis id orci.",
-    "sizes": ["S", "M", "L", "XL"]
+    "sizes": ["EUR36", "EUR37", "EUR38", "EUR39", "EUR40", "EUR41", "EUR42", "EUR43", "EUR44", "EUR45", "EUR46", "EUR47"]
   },
   {
     "id": 13,
     "name": "Ankle boots",
     "price": 77.8,
     "colors": [
-      {"name": "Black", "hex": "#000000"},
-      {"name":"White", "hex": "#ffffff"}
+      {"name": "Black", "hex": "#000000"}
     ],
     "discount": 15,
     "img": ["/products/ankle-boots.png"],
     "rate": 682,
     "category": "shoes",
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, eros a tincidunt varius, augue nisi blandit turpis, vel luctus justo turpis id orci.",
-    "sizes": ["S", "M", "L", "XL"]
+    "sizes": ["EUR36", "EUR37", "EUR38", "EUR39", "EUR40", "EUR41", "EUR42", "EUR43", "EUR44", "EUR45", "EUR46", "EUR47"]
   }
 ]

@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 
 import { AddWishlist } from '@components/AddWishlist';
+import { SizeCharts } from '@components/SizeCharts/SizeCharts';
 import { Button } from '@components/UI/Button';
 import { Price } from '@components/UI/Price';
 import { Rating } from '@mui/material';
@@ -48,11 +49,16 @@ export default function Product({ params }: { params: { id: string } }) {
               <p className="border-t-2 border-zinc-400 pt-3">
                 {product.details}
               </p>
-              <p className="text-4xl font-bold">Size:</p>
-              <div>
-                <Sizes sizes={product.sizes} />
-              </div>
+              {product.sizes && (
+                <>
+                  <p className="text-4xl font-bold">Size:</p>
+                  <div>
+                    <Sizes sizes={product.sizes} />
+                  </div>
+                </>
+              )}
               <Colors colors={product.colors} />
+              <SizeCharts />
               <div className="flex items-center gap-4">
                 <Button text="Add to cart" className="uppercase shadow-md" />
                 <AddWishlist product={product} background="white" />

@@ -4,7 +4,7 @@ type SizesProps = {
 
 export const Sizes = ({ sizes }: SizesProps) => {
   return (
-    <div className="flex flex-wrap gap-2">
+    <div className="flex flex-wrap gap-2 max-w-md">
       {sizes.map((size) => (
         <label key={size} htmlFor={size}>
           <input
