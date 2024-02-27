@@ -9,7 +9,8 @@
     "img": ["/products/chocker.png"],
     "rate": 1257,
     "category": "accessorie",
-    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, eros a tincidunt varius, augue nisi blandit turpis, vel luctus justo turpis id orci."
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, eros a tincidunt varius, augue nisi blandit turpis, vel luctus justo turpis id orci.",
+    "quantity": 15
   },
   {
     "id": 3,
@@ -21,7 +22,8 @@
     "img": ["/products/rings-gothic.png"],
     "rate": 682,
     "category": "accessorie",
-    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, eros a tincidunt varius, augue nisi blandit turpis, vel luctus justo turpis id orci."
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, eros a tincidunt varius, augue nisi blandit turpis, vel luctus justo turpis id orci.",
+    "quantity": 10
   },
   {
     "id": 4,
@@ -36,7 +38,8 @@
     "rate": 333,
     "category": "sweatshirt",
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, eros a tincidunt varius, augue nisi blandit turpis, vel luctus justo turpis id orci.",
-    "sizes": ["S", "M", "L", "XL"]
+    "sizes": ["S", "M", "L", "XL"],
+    "quantity": 28
   },
   {
     "id": 5,
@@ -51,7 +54,8 @@
     "rate": 555,
     "category": "shirt",
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, eros a tincidunt varius, augue nisi blandit turpis, vel luctus justo turpis id orci.",
-    "sizes": ["S", "M", "L", "XL"]
+    "sizes": ["S", "M", "L", "XL"],
+    "quantity": 5
   },
   {
     "id": 6,
@@ -65,7 +69,8 @@
     "rate": 777,
     "category": "coat",
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, eros a tincidunt varius, augue nisi blandit turpis, vel luctus justo turpis id orci.",
-    "sizes": ["S", "M", "L", "XL"]
+    "sizes": ["S", "M", "L", "XL"],
+    "quantity": 12
   },
   {
     "id": 8,
@@ -79,7 +84,8 @@
     "rate": 587,
     "category": "shirt",
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, eros a tincidunt varius, augue nisi blandit turpis, vel luctus justo turpis id orci.",
-    "sizes": ["S", "M", "L", "XL"]
+    "sizes": ["S", "M", "L", "XL"],
+    "quantity": 20
   },
   {
     "id": 9,
@@ -93,7 +99,8 @@
     "rate": 563,
     "category": "shirt",
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, eros a tincidunt varius, augue nisi blandit turpis, vel luctus justo turpis id orci.",
-    "sizes": ["S", "M", "L", "XL"]
+    "sizes": ["S", "M", "L", "XL"],
+    "quantity": 8
   },
   {
     "id": 10,
@@ -107,7 +114,8 @@
     "rate": 982,
     "category": "shirt",
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, eros a tincidunt varius, augue nisi blandit turpis, vel luctus justo turpis id orci.",
-    "sizes": ["S", "M", "L", "XL"]
+    "sizes": ["S", "M", "L", "XL"],
+    "quantity": 15
   },
   {
     "id": 11,
@@ -121,7 +129,8 @@
     "rate": 443,
     "category": "shoes",
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, eros a tincidunt varius, augue nisi blandit turpis, vel luctus justo turpis id orci.",
-    "sizes": ["EUR36", "EUR37", "EUR38", "EUR39", "EUR40", "EUR41", "EUR42", "EUR43", "EUR44", "EUR45", "EUR46", "EUR47"]
+    "sizes": ["EUR36", "EUR37", "EUR38", "EUR39", "EUR40", "EUR41", "EUR42", "EUR43", "EUR44", "EUR45", "EUR46", "EUR47"],
+    "quantity": 25
   },
   {
     "id": 12,
@@ -134,7 +143,8 @@
     "rate": 1000,
     "category": "shoes",
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, eros a tincidunt varius, augue nisi blandit turpis, vel luctus justo turpis id orci.",
-    "sizes": ["EUR36", "EUR37", "EUR38", "EUR39", "EUR40", "EUR41", "EUR42", "EUR43", "EUR44", "EUR45", "EUR46", "EUR47"]
+    "sizes": ["EUR36", "EUR37", "EUR38", "EUR39", "EUR40", "EUR41", "EUR42", "EUR43", "EUR44", "EUR45", "EUR46", "EUR47"],
+    "quantity": 18
   },
   {
     "id": 13,
@@ -148,6 +158,7 @@
     "rate": 682,
     "category": "shoes",
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, eros a tincidunt varius, augue nisi blandit turpis, vel luctus justo turpis id orci.",
-    "sizes": ["EUR36", "EUR37", "EUR38", "EUR39", "EUR40", "EUR41", "EUR42", "EUR43", "EUR44", "EUR45", "EUR46", "EUR47"]
+    "sizes": ["EUR36", "EUR37", "EUR38", "EUR39", "EUR40", "EUR41", "EUR42", "EUR43", "EUR44", "EUR45", "EUR46", "EUR47"],
+    "quantity": 3
   }
 ]
