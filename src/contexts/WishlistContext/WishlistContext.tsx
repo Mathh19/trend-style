@@ -2,8 +2,9 @@
 
 import { createContext, useState, useEffect } from 'react';
 
-import { ProductProps } from '@components/Product';
 import { useLocalStorage } from '@hooks/useLocalStorage';
+
+import { ProductProps } from '@shared-types/product';
 
 import { WishlistContextProps } from './types';
 
