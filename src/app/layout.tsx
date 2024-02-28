@@ -5,6 +5,7 @@ import './globals.css';
 import { GoToTop } from '@components/GoToTop';
 import { Footer } from '@components/Layout/Footer';
 import { Header } from '@components/Layout/Header';
+import { ShoppingCartProvider } from '@contexts/ShoppingCartContext/ShoppingCartContext';
 import { WishlistProvider } from '@contexts/WishlistContext/WishlistContext';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -24,12 +25,14 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <WishlistProvider>
-          <Header />
-          <main className="flex min-h-screen items-center flex-col mx-auto max-w-[1440px]">
-            {children}
-          </main>
-          <Footer />
-          <GoToTop />
+          <ShoppingCartProvider>
+            <Header />
+            <main className="flex min-h-screen items-center flex-col mx-auto max-w-[1440px]">
+              {children}
+            </main>
+            <Footer />
+            <GoToTop />
+          </ShoppingCartProvider>
         </WishlistProvider>
       </body>
     </html>

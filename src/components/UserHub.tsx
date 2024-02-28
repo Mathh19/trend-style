@@ -4,12 +4,14 @@ import Link from 'next/link';
 import { useContext, useEffect, useState } from 'react';
 import { FiHeart, FiShoppingCart, FiUser } from 'react-icons/fi';
 
+import { ShoppingCartContext } from '@contexts/ShoppingCartContext/ShoppingCartContext';
 import { WishlistContext } from '@contexts/WishlistContext/WishlistContext';
 
 import { CustomBadge } from './CustomBadge';
 
 export const UserHub = () => {
   const { products } = useContext(WishlistContext);
+  const { totalItems } = useContext(ShoppingCartContext);
   const [countWishlist, setCountWishlist] = useState(0);
 
   useEffect(() => {
@@ -27,7 +29,9 @@ export const UserHub = () => {
         </CustomBadge>
       </Link>
       <Link title="shopping cart" href="/" className="flex">
-        <FiShoppingCart size={22} />
+        <CustomBadge badgeContent={totalItems}>
+          <FiShoppingCart size={22} />
+        </CustomBadge>
       </Link>
     </>
   );
