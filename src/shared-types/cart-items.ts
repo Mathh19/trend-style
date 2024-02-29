@@ -1,8 +1,6 @@
+import { ProductProps } from './product';
+
 export type cartItemsProps = {
-  id: number;
-  size: string;
   color: string;
-  quantity: number;
-  price: number;
-  discount?: number;
-};
+  size: string;
+} & Omit<ProductProps, 'sizes' | 'colors'>;
