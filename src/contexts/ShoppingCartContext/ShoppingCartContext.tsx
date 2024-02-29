@@ -4,9 +4,11 @@ import { createContext, useEffect, useState } from 'react';
 
 import { useLocalStorage } from '@hooks/useLocalStorage';
 
+import { cartItemsProps } from '@shared-types/cart-items';
+
 import { isSameProduct } from './utils/isSameProduct';
 
-import { ShoppingCartContextProps, cartItemsProps } from './types';
+import { ShoppingCartContextProps } from './types';
 
 export const ShoppingCartContext = createContext(
   {} as ShoppingCartContextProps
