@@ -6,6 +6,7 @@ export type ProductProps = {
   colors: { name: string; hex: string }[];
   sizes?: string[];
   details?: string;
+  category: string;
   discount?: number;
   quantity: number;
   img: string[];
