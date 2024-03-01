@@ -4,15 +4,12 @@ import Image from 'next/image';
 import { useState } from 'react';
 import { FiArrowLeftCircle, FiArrowRightCircle } from 'react-icons/fi';
 
-type ProductImageDisplayProps = {
+type GalleryProps = {
   images: string[];
   description: string;
 };
 
-export const ProductImageDisplay = ({
-  images,
-  description
-}: ProductImageDisplayProps) => {
+export const Gallery = ({ images, description }: GalleryProps) => {
   const [selectedImage, setSelectedImage] = useState(images[0]);
   const positionImage = images.indexOf(selectedImage);
 

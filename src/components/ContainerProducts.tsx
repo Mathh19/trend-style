@@ -1,6 +1,6 @@
 import { ProductProps } from '@shared-types/product';
 
-import { Product } from './Product';
+import { ProductCard } from './ProductCard';
 
 type ContainerProductsProps = {
   title?: string;
@@ -16,7 +16,7 @@ export const ContainerProducts = ({
       {title && <h2 className="text-4xl">{title}</h2>}
       <div className="flex justify-around w-full flex-wrap gap-16">
         {products.map((product, index) => (
-          <Product key={index} product={product} />
+          <ProductCard key={index} product={product} />
         ))}
       </div>
     </div>

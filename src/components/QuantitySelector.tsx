@@ -31,7 +31,7 @@ export const QuantitySelector = ({
   };
 
   return (
-    <div className="flex">
+    <label className="flex" htmlFor="product_count">
       <button
         disabled={productQuantity <= 1}
         onClick={decrementQuantity}
@@ -53,6 +53,6 @@ export const QuantitySelector = ({
       >
         +
       </button>
-    </div>
+    </label>
   );
 };

@@ -8,7 +8,7 @@ import { AddWishlist } from './AddWishlist';
 import { Button } from './UI/Button';
 import { Price } from './UI/Price';
 
-export const Product = ({ product }: { product: ProductProps }) => {
+export const ProductCard = ({ product }: { product: ProductProps }) => {
   return (
     <div className="relative w-72 h-92 border drop-shadow-md">
       <div className="absolute flex w-full justify-between p-2">
