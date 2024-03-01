@@ -16,7 +16,8 @@ export const QuantitySelector = ({
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     const quantityValue = e.target.value;
     if (isNaN(Number(quantityValue))) return;
-    if (Number(quantityValue) > quantity || Number(quantityValue) < 1) return;
+    if (Number(quantityValue) > quantity) return;
+    if (Number(quantityValue) < 1) return setProductQuantity(1);
     onQuantityChange(Number(quantityValue));
     setProductQuantity(Number(quantityValue));
   };
