@@ -1,9 +1,11 @@
+import { ColorProps } from './color';
+
 export type ProductProps = {
   id: number;
   name: string;
   rate: number;
   price: number;
-  colors: { name: string; hex: string }[];
+  colors: ColorProps[];
   sizes?: string[];
   details?: string;
   category: string;

@@ -10,6 +10,7 @@ import { Button } from '@components/UI/Button';
 import { Price } from '@components/UI/Price';
 import { ShoppingCartContext } from '@contexts/ShoppingCartContext/ShoppingCartContext';
 
+import { ColorProps } from '@shared-types/color';
 import { ProductProps } from '@shared-types/product';
 
 import { checkQuantityStock } from '@app/product/utils/checkQuantityStock';
@@ -25,7 +26,10 @@ type ProductDetails = {
 export const ProductDetails = ({ product }: ProductDetails) => {
   const { addItems } = useContext(ShoppingCartContext);
   const [productQuantity, setProductQuantity] = useState(1);
-  const [selectedColor, setSelectedColor] = useState('');
+  const [selectedColor, setSelectedColor] = useState({
+    name: '',
+    hex: ''
+  });
   const [selectedSize, setSelectedSize] = useState('');
   const [errors, setErrors] = useState({
     size: '',
@@ -53,7 +57,7 @@ export const ProductDetails = ({ product }: ProductDetails) => {
     [errors]
   );
   const handleColorChange = useCallback(
-    (color: string) => {
+    (color: ColorProps) => {
       setSelectedColor(color);
       setErrors({ ...errors, color: '' });
     },

@@ -1,16 +1,15 @@
 import { ChangeEvent } from 'react';
 
-type ColorProps = {
-  colors: {
-    name: string;
-    hex: string;
-  }[];
-  onColorChange: (selectedColor: string) => void;
+import { ColorProps } from '@shared-types/color';
+
+type ColorComponentProps = {
+  colors: ColorProps[];
+  onColorChange: (selectedColor: ColorProps) => void;
 };
 
-export const Colors = ({ colors, onColorChange }: ColorProps) => {
+export const Colors = ({ colors, onColorChange }: ColorComponentProps) => {
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
-    onColorChange(e.target.value);
+    onColorChange({ name: e.target.id, hex: e.target.value });
   };
 
   return (
@@ -28,7 +27,7 @@ export const Colors = ({ colors, onColorChange }: ColorProps) => {
               id={color.name}
               onChange={handleChange}
               name="color"
-              value={color.name}
+              value={color.hex}
               className="peer appearance-none"
             />
             <span

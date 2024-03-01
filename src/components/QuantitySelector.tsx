@@ -41,7 +41,7 @@ export const QuantitySelector = ({
         -
       </button>
       <input
-        name="product_count"
+        id="product_count"
         type="text"
         value={productQuantity.toString()}
         onChange={handleChange}
