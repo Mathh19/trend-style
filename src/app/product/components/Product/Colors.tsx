@@ -1,11 +1,18 @@
+import { ChangeEvent } from 'react';
+
 type ColorProps = {
   colors: {
     name: string;
     hex: string;
   }[];
+  onColorChange: (selectedColor: string) => void;
 };
 
-export const Colors = ({ colors }: ColorProps) => {
+export const Colors = ({ colors, onColorChange }: ColorProps) => {
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+    onColorChange(e.target.value);
+  };
+
   return (
     <div className="flex flex-col gap-2">
       <p className="text-4xl font-bold">Color:</p>
@@ -19,6 +26,7 @@ export const Colors = ({ colors }: ColorProps) => {
             <input
               type="radio"
               id={color.name}
+              onChange={handleChange}
               name="color"
               value={color.name}
               className="peer appearance-none"

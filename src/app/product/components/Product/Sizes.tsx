@@ -1,8 +1,15 @@
+import { ChangeEvent } from 'react';
+
 type SizesProps = {
   sizes: string[];
+  onSizeChange: (selectedSize: string) => void;
 };
 
-export const Sizes = ({ sizes }: SizesProps) => {
+export const Sizes = ({ sizes, onSizeChange }: SizesProps) => {
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+    onSizeChange(e.target.value);
+  };
+
   return (
     <div className="flex flex-wrap gap-2 max-w-md">
       {sizes.map((size) => (
@@ -10,6 +17,7 @@ export const Sizes = ({ sizes }: SizesProps) => {
           <input
             type="radio"
             id={size}
+            onChange={handleChange}
             name="size"
             value={size}
             className="appearance-none peer"
