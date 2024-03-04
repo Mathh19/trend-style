@@ -5,8 +5,9 @@ import { HiOutlineInbox } from 'react-icons/hi2';
 import { IoIosCloseCircleOutline } from 'react-icons/io';
 
 import { ContainerProducts } from '@components/ContainerProducts';
-import { ProductProps } from '@components/ProductCard';
 import { WishlistContext } from '@contexts/WishlistContext/WishlistContext';
+
+import { ProductProps } from '@shared-types/product';
 
 export default function Wishlist() {
   const { products, clearWishList } = useContext(WishlistContext);
