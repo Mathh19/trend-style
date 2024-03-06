@@ -39,13 +39,13 @@ export const ProductDetails = ({ product }: ProductDetails) => {
   const {
     id,
     name,
+    stock,
     rate,
     price,
     discount,
     details,
     sizes,
     colors,
-    quantity,
     img
   } = product;
 
@@ -88,6 +88,7 @@ export const ProductDetails = ({ product }: ProductDetails) => {
       name,
       price,
       discount,
+      stock,
       size: selectedSize,
       color: selectedColor,
       quantity: productQuantity
@@ -111,12 +112,9 @@ export const ProductDetails = ({ product }: ProductDetails) => {
       )}
       <Colors colors={colors} onColorChange={handleColorChange} />
       <ErrorMessage message={errors.color} />
-      <QuantitySelector
-        quantity={quantity}
-        onQuantityChange={handleQuantityChange}
-      />
+      <QuantitySelector stock={stock} onQuantityChange={handleQuantityChange} />
       <ErrorMessage message={errors.quantity} />
-      <span className="text-sm text-zinc-600">{quantity} in stock</span>
+      <span className="text-sm text-zinc-600">{stock} in stock</span>
       <SizeCharts />
       <div className="flex items-center gap-4">
         <Button

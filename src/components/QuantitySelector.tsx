@@ -3,12 +3,12 @@
 import { ChangeEvent, useState } from 'react';
 
 type QuantitySelectorProps = {
-  quantity: number;
+  stock: number;
   onQuantityChange: (quantity: number) => void;
 };
 
 export const QuantitySelector = ({
-  quantity,
+  stock,
   onQuantityChange
 }: QuantitySelectorProps) => {
   const [productQuantity, setProductQuantity] = useState(1);
@@ -16,7 +16,7 @@ export const QuantitySelector = ({
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     const quantityValue = e.target.value;
     if (isNaN(Number(quantityValue))) return;
-    if (Number(quantityValue) > quantity) return;
+    if (Number(quantityValue) > stock) return;
     if (Number(quantityValue) < 1) return setProductQuantity(1);
     onQuantityChange(Number(quantityValue));
     setProductQuantity(Number(quantityValue));
@@ -48,7 +48,7 @@ export const QuantitySelector = ({
         className="border text-center border-black w-7 h-7"
       />
       <button
-        disabled={productQuantity >= quantity}
+        disabled={productQuantity >= stock}
         onClick={incrementQuantity}
         className="bg-black text-white w-7 h-7 disabled:bg-zinc-300"
       >

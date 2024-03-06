@@ -10,7 +10,7 @@
     "rate": 1257,
     "category": "accessorie",
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, eros a tincidunt varius, augue nisi blandit turpis, vel luctus justo turpis id orci.",
-    "quantity": 15
+    "stock": 15
   },
   {
     "id": 3,
@@ -23,7 +23,7 @@
     "rate": 682,
     "category": "accessorie",
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, eros a tincidunt varius, augue nisi blandit turpis, vel luctus justo turpis id orci.",
-    "quantity": 10
+    "stock": 10
   },
   {
     "id": 4,
@@ -39,7 +39,7 @@
     "category": "sweatshirt",
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, eros a tincidunt varius, augue nisi blandit turpis, vel luctus justo turpis id orci.",
     "sizes": ["S", "M", "L", "XL"],
-    "quantity": 28
+    "stock": 28
   },
   {
     "id": 5,
@@ -55,7 +55,7 @@
     "category": "shirt",
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, eros a tincidunt varius, augue nisi blandit turpis, vel luctus justo turpis id orci.",
     "sizes": ["S", "M", "L", "XL"],
-    "quantity": 5
+    "stock": 5
   },
   {
     "id": 6,
@@ -70,7 +70,7 @@
     "category": "coat",
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, eros a tincidunt varius, augue nisi blandit turpis, vel luctus justo turpis id orci.",
     "sizes": ["S", "M", "L", "XL"],
-    "quantity": 12
+    "stock": 12
   },
   {
     "id": 8,
@@ -85,7 +85,7 @@
     "category": "shirt",
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, eros a tincidunt varius, augue nisi blandit turpis, vel luctus justo turpis id orci.",
     "sizes": ["S", "M", "L", "XL"],
-    "quantity": 20
+    "stock": 20
   },
   {
     "id": 9,
@@ -100,7 +100,7 @@
     "category": "shirt",
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, eros a tincidunt varius, augue nisi blandit turpis, vel luctus justo turpis id orci.",
     "sizes": ["S", "M", "L", "XL"],
-    "quantity": 8
+    "stock": 8
   },
   {
     "id": 10,
@@ -115,7 +115,7 @@
     "category": "shirt",
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, eros a tincidunt varius, augue nisi blandit turpis, vel luctus justo turpis id orci.",
     "sizes": ["S", "M", "L", "XL"],
-    "quantity": 15
+    "stock": 15
   },
   {
     "id": 11,
@@ -130,7 +130,7 @@
     "category": "shoes",
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, eros a tincidunt varius, augue nisi blandit turpis, vel luctus justo turpis id orci.",
     "sizes": ["EUR36", "EUR37", "EUR38", "EUR39", "EUR40", "EUR41", "EUR42", "EUR43", "EUR44", "EUR45", "EUR46", "EUR47"],
-    "quantity": 25
+    "stock": 25
   },
   {
     "id": 12,
@@ -144,7 +144,7 @@
     "category": "shoes",
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, eros a tincidunt varius, augue nisi blandit turpis, vel luctus justo turpis id orci.",
     "sizes": ["EUR36", "EUR37", "EUR38", "EUR39", "EUR40", "EUR41", "EUR42", "EUR43", "EUR44", "EUR45", "EUR46", "EUR47"],
-    "quantity": 18
+    "stock": 18
   },
   {
     "id": 13,
@@ -159,6 +159,6 @@
     "category": "shoes",
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, eros a tincidunt varius, augue nisi blandit turpis, vel luctus justo turpis id orci.",
     "sizes": ["EUR36", "EUR37", "EUR38", "EUR39", "EUR40", "EUR41", "EUR42", "EUR43", "EUR44", "EUR45", "EUR46", "EUR47"],
-    "quantity": 3
+    "stock": 3
   }
 ]

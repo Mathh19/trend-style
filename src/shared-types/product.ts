@@ -8,8 +8,7 @@ export type ProductProps = {
   colors: ColorProps[];
   sizes?: string[];
   details?: string;
-  category: string;
+  stock: number;
   discount?: number;
-  quantity: number;
   img: string[];
 };
