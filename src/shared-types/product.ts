@@ -5,6 +5,7 @@ export type ProductProps = {
   name: string;
   rate: number;
   price: number;
+  category: string;
   colors: ColorProps[];
   sizes: string[];
   details?: string;
