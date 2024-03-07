@@ -3,24 +3,45 @@
     "id": 8,
     "name": "T-shirt - alien",
     "price": 23,
-    "img": ["./products/t-shirt-alien.png"],
+    "colors": [
+      {"name": "Black", "hex": "#000000"},
+      {"name":"White", "hex": "#ffffff"}
+    ],
+    "img": ["/products/t-shirt-alien.png"],
     "rate": 587,
-    "category": "shirt"
+    "category": "shirt",
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, eros a tincidunt varius, augue nisi blandit turpis, vel luctus justo turpis id orci.",
+    "sizes": ["S", "M", "L", "XL"],
+    "stock": 20
   },
   {
     "id": 9,
     "name": "T-shirt - Skull hands",
     "price": 23,
+    "colors": [
+      {"name": "Black", "hex": "#000000"},
+      {"name":"White", "hex": "#ffffff"}
+    ],
     "img": ["/products/t-shirt-skull-hands-1.png", "/products/t-shirt-skull-hands-2.png"],
     "rate": 563,
-    "category": "shirt"
+    "category": "shirt",
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, eros a tincidunt varius, augue nisi blandit turpis, vel luctus justo turpis id orci.",
+    "sizes": ["S", "M", "L", "XL"],
+    "stock": 8
   },
   {
     "id": 10,
     "name": "T-shirt - Black",
     "price": 23,
-    "img": ["./products/t-shirt-black.png"],
+    "colors": [
+      {"name": "Black", "hex": "#000000"},
+      {"name":"White", "hex": "#ffffff"}
+    ],
+    "img": ["/products/t-shirt-black.png"],
     "rate": 982,
-    "category": "shirt"
+    "category": "shirt",
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, eros a tincidunt varius, augue nisi blandit turpis, vel luctus justo turpis id orci.",
+    "sizes": ["S", "M", "L", "XL"],
+    "stock": 15
   }
 ]

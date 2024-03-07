@@ -1,31 +1,5 @@
 [
   {
-    "id": 2,
-    "name": "Chocker",
-    "price": 15.5,
-    "colors": [
-      {"name": "Black", "hex": "#000000"}
-    ],
-    "img": ["/products/chocker.png"],
-    "rate": 1257,
-    "category": "accessorie",
-    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, eros a tincidunt varius, augue nisi blandit turpis, vel luctus justo turpis id orci.",
-    "stock": 15
-  },
-  {
-    "id": 3,
-    "name": "Black Skull Rivets Rings Handcuff Gothic",
-    "price": 21.8,
-    "colors": [
-      {"name": "Black", "hex": "#000000"}
-    ],
-    "img": ["/products/rings-gothic.png"],
-    "rate": 682,
-    "category": "accessorie",
-    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, eros a tincidunt varius, augue nisi blandit turpis, vel luctus justo turpis id orci.",
-    "stock": 10
-  },
-  {
     "id": 4,
     "name": "Heart print sweatshirt",
     "price": 119.90,

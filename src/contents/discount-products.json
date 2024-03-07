@@ -3,33 +3,47 @@
     "id": 4,
     "name": "Heart print sweatshirt",
     "price": 119.90,
-    "discount": 30,
-    "img": [
-      "/products/heart-print-sweatshirt-1.png",
-      "/products/heart-print-sweatshirt-2.png"
+    "colors": [
+      {"name": "Black", "hex": "#000000"},
+      {"name":"White", "hex": "#ffffff"}
     ],
+    "discount": 30,
+    "img": ["/products/heart-print-sweatshirt-1.png", "/products/heart-print-sweatshirt-2.png"],
     "rate": 333,
-    "category": "sweatshirt"
+    "category": "sweatshirt",
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, eros a tincidunt varius, augue nisi blandit turpis, vel luctus justo turpis id orci.",
+    "sizes": ["S", "M", "L", "XL"],
+    "stock": 28
   },
   {
     "id": 5,
     "name": "Long-sleeve shirt - faces",
     "price": 85,
-    "discount": 20,
-    "img": [
-      "./products/long-sleeve-shirt-faces-1.png",
-      "./products/long-sleeve-shirt-faces-2.png"
+    "colors": [
+      {"name": "Black", "hex": "#000000"},
+      {"name":"White", "hex": "#ffffff"}
     ],
+    "discount": 20,
+    "img": ["/products/long-sleeve-shirt-faces-1.png", "/products/long-sleeve-shirt-faces-2.png"],
     "rate": 555,
-    "category": "shirt"
+    "category": "shirt",
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, eros a tincidunt varius, augue nisi blandit turpis, vel luctus justo turpis id orci.",
+    "sizes": ["S", "M", "L", "XL"],
+    "stock": 5
   },
   {
     "id": 6,
     "name": "Beige Coat",
     "price": 100,
+    "colors": [
+      {"name": "Beige", "hex": "#DAB27D"}
+    ],
     "discount": 50,
-    "img": ["./products/beige-coat.png"],
+    "img": ["/products/beige-coat.png"],
     "rate": 777,
-    "category": "coat"
+    "category": "coat",
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, eros a tincidunt varius, augue nisi blandit turpis, vel luctus justo turpis id orci.",
+    "sizes": ["S", "M", "L", "XL"],
+    "stock": 12
   }
 ]
