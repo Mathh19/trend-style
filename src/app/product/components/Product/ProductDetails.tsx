@@ -91,7 +91,8 @@ export const ProductDetails = ({ product }: ProductDetails) => {
       price,
       discount,
       stock,
-      sizes: sizes,
+      sizes,
+      colors,
       size: selectedSize,
       color: selectedColor,
       quantity: productQuantity
