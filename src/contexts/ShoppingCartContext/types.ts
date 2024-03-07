@@ -1,8 +1,8 @@
-import { cartItemsProps } from '@shared-types/cart-items';
+import { CartItemsProps } from '@shared-types/cart-items';
 
 export type ShoppingCartContextProps = {
-  cartItems: cartItemsProps[];
+  cartItems: CartItemsProps[];
   totalItems: number;
-  addItems: (item: cartItemsProps) => void;
+  addItems: (item: CartItemsProps) => void;
   clearCart: () => void;
 };

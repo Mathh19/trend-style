@@ -4,7 +4,7 @@ import { createContext, useEffect, useState } from 'react';
 
 import { useLocalStorage } from '@hooks/useLocalStorage';
 
-import { cartItemsProps } from '@shared-types/cart-items';
+import { CartItemsProps } from '@shared-types/cart-items';
 
 import { isSameProduct } from './utils/isSameProduct';
 
@@ -20,11 +20,11 @@ export const ShoppingCartProvider = ({
   children: React.ReactNode;
 }) => {
   const { storedValue: productStored, setValue: setProductStored } =
-    useLocalStorage<cartItemsProps[]>('cartItems', []);
-  const [cartItems, setCartItems] = useState<cartItemsProps[]>([]);
+    useLocalStorage<CartItemsProps[]>('cartItems', []);
+  const [cartItems, setCartItems] = useState<CartItemsProps[]>([]);
   const [totalItems, setTotalItems] = useState(0);
 
-  const addItems = (item: cartItemsProps) => {
+  const addItems = (item: CartItemsProps) => {
     const hasProductIndex = cartItems.findIndex((product) =>
       isSameProduct(product, item)
     );
@@ -52,7 +52,12 @@ export const ShoppingCartProvider = ({
 
   return (
     <ShoppingCartContext.Provider
-      value={{ cartItems, totalItems, addItems, clearCart }}
+      value={{
+        cartItems,
+        totalItems,
+        addItems,
+        clearCart
+      }}
     >
       {children}
     </ShoppingCartContext.Provider>

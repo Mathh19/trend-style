@@ -1,8 +1,9 @@
 import { ColorProps } from './color';
 import { ProductProps } from './product';
 
-export type cartItemsProps = {
+export type CartItemsProps = {
+  cartId: string | number;
   color: ColorProps;
   size: string;
   quantity: number;
-} & Omit<ProductProps, 'sizes' | 'colors' | 'details' | 'rate' | 'category'>;
+} & Omit<ProductProps, 'colors' | 'details' | 'rate' | 'category'>;

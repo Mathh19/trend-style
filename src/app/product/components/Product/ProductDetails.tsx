@@ -9,6 +9,7 @@ import { SizeCharts } from '@components/SizeCharts/SizeCharts';
 import { Button } from '@components/UI/Button';
 import { Price } from '@components/UI/Price';
 import { ShoppingCartContext } from '@contexts/ShoppingCartContext/ShoppingCartContext';
+import { v4 as uuidv4 } from 'uuid';
 
 import { ColorProps } from '@shared-types/color';
 import { ProductProps } from '@shared-types/product';
@@ -83,12 +84,14 @@ export const ProductDetails = ({ product }: ProductDetails) => {
     setErrors({ size: '', color: '', quantity: '' });
 
     addItems({
+      cartId: uuidv4(),
       id,
       img,
       name,
       price,
       discount,
       stock,
+      sizes: sizes,
       size: selectedSize,
       color: selectedColor,
       quantity: productQuantity
