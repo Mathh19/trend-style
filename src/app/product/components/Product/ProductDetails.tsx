@@ -77,7 +77,7 @@ export const ProductDetails = ({ product }: ProductDetails) => {
     if (!product) return;
     if (!selectedSize)
       return setErrors({ ...errors, size: 'Please choose a size.' });
-    if (!selectedColor)
+    if (selectedColor.hex === '' || selectedColor.name === '')
       return setErrors({ ...errors, color: 'Please choose a color.' });
     if (checkQuantityStock(id, productQuantity))
       return setErrors({ ...errors, quantity: 'Out of stock.' });
