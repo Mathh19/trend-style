@@ -1,8 +1,8 @@
-import { cartItemsProps } from '@shared-types/cart-items';
+import { CartItemsProps } from '@shared-types/cart-items';
 
 export const isSameProduct = (
-  existingProduct: cartItemsProps,
-  currentProduct: cartItemsProps
+  existingProduct: CartItemsProps,
+  currentProduct: CartItemsProps
 ) => {
   return (
     existingProduct.id === currentProduct.id &&
