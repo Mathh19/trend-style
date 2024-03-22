@@ -2,6 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@layer base {
+  * {
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+  }
+
+  *::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  *::-webkit-scrollbar-track {
+    border-radius: 5px;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    border-radius: 14px;
+  }
+}
+
 @layer components {
   * {
     @apply scroll-smooth
