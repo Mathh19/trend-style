@@ -46,7 +46,7 @@ export const Selector = ({
   };
 
   return (
-    <div className="max-w-[90px]">
+    <div className="relative max-w-[90px]">
       <div className="cursor-default bg-white w-full flex items-center justify-between gap-2 border border-black rounded-full px-1.5 py-[2px]">
         <div className="flex justify-center items-center gap-1">
           {typeof actualValue !== 'string' && (
@@ -69,7 +69,7 @@ export const Selector = ({
         </button>
       </div>
       {open && (
-        <ul className="bg-white rounded-sm text-sm border mt-1.5 max-h-[62px] overflow-y-auto border-black drop-shadow divide-y divide-black">
+        <ul className="absolute z-50 w-full bg-white rounded-sm text-sm border mt-1.5 max-h-[62px] overflow-y-auto border-black drop-shadow divide-y divide-black">
           {colors &&
             colors.map((color) => (
               <li

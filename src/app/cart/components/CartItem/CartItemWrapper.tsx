@@ -3,7 +3,5 @@ export const CartItemWrapper = ({
 }: {
   children: React.ReactNode;
 }) => {
-  return (
-    <div className="relative bg-white flex border border-black">{children}</div>
-  );
+  return <div className="bg-white flex border border-black">{children}</div>;
 };

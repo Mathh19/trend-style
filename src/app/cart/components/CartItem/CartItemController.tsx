@@ -28,7 +28,7 @@ export const CartItemController = ({ product }: CartItemControllerProps) => {
 
   return (
     <>
-      <div className="flex flex-wrap mt-1 gap-2">
+      <div className="flex flex-1 flex-wrap mt-1 gap-2">
         <Selector
           product={product}
           actualValue={product.color}
@@ -40,14 +40,16 @@ export const CartItemController = ({ product }: CartItemControllerProps) => {
           sizes={product.sizes}
         />
       </div>
-      <div className="absolute bottom-0 mb-1">
-        <Price price={product.price} discount={product.discount} />
-      </div>
-      <div className="flex gap-2 absolute bottom-0 right-0 mb-1 mr-2">
-        <InputQuantity product={product} />{' '}
-        <button onClick={() => deleteItem(product.cartId)}>
-          <FaTrash />
-        </button>
+      <div className="w-full flex flex-wrap items-center justify-between">
+        <div>
+          <Price price={product.price} discount={product.discount} />
+        </div>
+        <div className="flex gap-2">
+          <InputQuantity product={product} />{' '}
+          <button onClick={() => deleteItem(product.cartId)}>
+            <FaTrash />
+          </button>
+        </div>
       </div>
     </>
   );

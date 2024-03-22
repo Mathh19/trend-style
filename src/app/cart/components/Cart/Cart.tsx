@@ -27,15 +27,15 @@ export const Cart = () => {
               <CartItem.Wrapper key={cartItem.cartId}>
                 <CartItem.Image img={cartItem.img[0]} alt={cartItem.name} />
                 <CartItem.Content>
-                  <div className="flex justify-between items-center gap-1">
+                  <div className="flex flex-col h-full justify-between">
                     <Link
                       href={`/product/${cartItem.id}`}
                       className="font-semibold hover:underline"
                     >
                       {cartItem.name}
                     </Link>
+                    <CartItem.Controller product={cartItem} />
                   </div>
-                  <CartItem.Controller product={cartItem} />
                 </CartItem.Content>
               </CartItem.Wrapper>
             ))}
