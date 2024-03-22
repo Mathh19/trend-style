@@ -37,6 +37,26 @@ export const ShoppingCartProvider = ({
     setProductStored([...cartItems, { ...item }]);
   };
 
+  const updateItem = (item: CartItemsProps) => {
+    const hasProductIndex = cartItems.findIndex(
+      (product) => product.cartId === item.cartId
+    );
+    if (hasProductIndex !== -1) {
+      const updatedProducts = [...cartItems];
+      updatedProducts[hasProductIndex] = item;
+      setProductStored(updatedProducts);
+      return;
+    }
+    return;
+  };
+
+  const deleteItem = (itemId: string | number) => {
+    const filteredItem = cartItems.filter(
+      (cartItem) => cartItem.cartId !== itemId
+    );
+    setProductStored(filteredItem);
+  };
+
   const clearCart = () => {
     setProductStored([]);
   };
@@ -56,6 +76,8 @@ export const ShoppingCartProvider = ({
         cartItems,
         totalItems,
         addItems,
+        updateItem,
+        deleteItem,
         clearCart
       }}
     >

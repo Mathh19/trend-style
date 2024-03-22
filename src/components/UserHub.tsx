@@ -28,7 +28,7 @@ export const UserHub = () => {
           <FiHeart size={22} />
         </CustomBadge>
       </Link>
-      <Link title="shopping cart" href="/" className="flex">
+      <Link title="shopping cart" href="/cart" className="flex">
         <CustomBadge badgeContent={totalItems}>
           <FiShoppingCart size={22} />
         </CustomBadge>

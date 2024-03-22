@@ -3,7 +3,7 @@ import { ComponentProps, ElementType } from 'react';
 import { tv } from 'tailwind-variants';
 
 const button = tv({
-  base: 'flex items-center gap-2 bg-black text-white p-2 font-semibold rounded-sm'
+  base: 'flex justify-center items-center gap-2 bg-black text-white p-2 font-semibold rounded-sm'
 });
 
 type ButtonProps = {
