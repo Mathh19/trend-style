@@ -3,7 +3,7 @@ import { Comment } from './Comment';
 
 export const WrapperComments = () => {
   return (
-    <section className="mt-16">
+    <section>
       <h2 className="text-4xl font-bold border-b-2 border-zinc-400 pb-2.5">
         Comments
       </h2>
