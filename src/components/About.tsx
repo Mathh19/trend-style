@@ -10,7 +10,7 @@ export const About = () => {
   return (
     <section
       id="About"
-      className="flex min-h-screen justify-center text-center w-full bg-black text-white gap-16 p-9 flex-wrap"
+      className="flex justify-center text-center w-full bg-black text-white gap-16 p-9 flex-wrap"
     >
       <div className="max-w-xl space-y-9">
         <h2 className={`${keaniaOne.className} uppercase text-6xl`}>
@@ -33,7 +33,7 @@ export const About = () => {
         <img
           src="./about-us/models.png"
           alt="Image of three alternative people to represent our business style"
-          className="w-full h-full max-w-sm"
+          className="w-full h-full max-h-[600px] max-w-sm"
         />
       </div>
     </section>

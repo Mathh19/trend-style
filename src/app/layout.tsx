@@ -27,9 +27,7 @@ export default function RootLayout({
         <WishlistProvider>
           <ShoppingCartProvider>
             <Header />
-            <main className="flex min-h-screen items-center flex-col mx-auto max-w-[1440px]">
-              {children}
-            </main>
+            <main>{children}</main>
             <Footer />
             <GoToTop />
           </ShoppingCartProvider>
