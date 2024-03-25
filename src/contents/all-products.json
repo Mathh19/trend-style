@@ -10,7 +10,7 @@
     "discount": 30,
     "img": ["/products/heart-print-sweatshirt-1.png", "/products/heart-print-sweatshirt-2.png"],
     "rate": 333,
-    "category": "sweatshirt",
+    "category": "shirt",
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, eros a tincidunt varius, augue nisi blandit turpis, vel luctus justo turpis id orci.",
     "sizes": ["S", "M", "L", "XL"],
     "stock": 28
@@ -41,7 +41,7 @@
     "discount": 50,
     "img": ["/products/beige-coat.png"],
     "rate": 777,
-    "category": "coat",
+    "category": "shirt",
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, eros a tincidunt varius, augue nisi blandit turpis, vel luctus justo turpis id orci.",
     "sizes": ["S", "M", "L", "XL"],
     "stock": 12
