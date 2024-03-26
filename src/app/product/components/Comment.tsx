@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import { Rating } from '@mui/material';
+import { Rating } from '@components/Rating';
 
 export type CommentProps = {
   avatar: string;
@@ -44,7 +44,7 @@ export const Comment = ({
       <span className="block text-zinc-600">
         Product info: Size: {productInfo.size} | Color: {productInfo.color}
       </span>
-      <Rating name="read-only" value={rate} readOnly precision={0.5} />
+      <Rating rate={rate} />
       <p>{comment}</p>
     </div>
   );

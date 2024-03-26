@@ -2,12 +2,12 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { MdOutlineStar } from 'react-icons/md';
 import { TbShoppingCartPlus } from 'react-icons/tb';
 
 import { ProductProps } from '@shared-types/product';
 
 import { AddWishlist } from './AddWishlist';
+import { Rating } from './Rating';
 import { Button } from './UI/Button';
 import { Price } from './UI/Price';
 
@@ -35,12 +35,7 @@ export const ProductCard = ({ product }: { product: ProductProps }) => {
             <p className="text-left group-hover:underline">{product.name}</p>
             <Price price={product.price} discount={product.discount} />
           </div>
-          <div className="flex items-center text-yellow-500">
-            {[...Array(5)].map((_, index) => {
-              return <MdOutlineStar key={index} />;
-            })}
-            <span className="ml-1 text-xs text-zinc-600">({product.rate})</span>
-          </div>
+          <Rating rate={product.rate} rate_count={product.rate_count} />
         </div>
       </Link>
     </div>

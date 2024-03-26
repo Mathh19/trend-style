@@ -5,6 +5,7 @@ import { useCallback, useContext, useState } from 'react';
 import { AddWishlist } from '@components/AddWishlist';
 import { ErrorMessage } from '@components/ErrorMessage';
 import { QuantitySelector } from '@components/QuantitySelector';
+import { Rating } from '@components/Rating';
 import { SizeCharts } from '@components/SizeCharts/SizeCharts';
 import { Button } from '@components/UI/Button';
 import { Price } from '@components/UI/Price';
@@ -17,7 +18,6 @@ import { ProductProps } from '@shared-types/product';
 import { checkQuantityStock } from '@app/product/utils/checkQuantityStock';
 
 import { Colors } from './Colors';
-import { ProductReview } from './ProductReview';
 import { Sizes } from './Sizes';
 
 type ProductDetails = {
@@ -105,7 +105,7 @@ export const ProductDetails = ({ product }: ProductDetails) => {
   return (
     <div className="space-y-3">
       <h2 className="text-4xl font-bold">{name}</h2>
-      <ProductReview rate={rate} rate_count={rate_count} />
+      <Rating rate={rate} rate_count={rate_count} />
       <Price price={price} discount={discount} size="large" />
       <p className="border-t-2 border-zinc-400 pt-3">{details}</p>
       {sizes && (
