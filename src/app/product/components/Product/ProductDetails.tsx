@@ -42,6 +42,7 @@ export const ProductDetails = ({ product }: ProductDetails) => {
     name,
     stock,
     rate,
+    rate_count,
     category,
     price,
     discount,
@@ -104,7 +105,7 @@ export const ProductDetails = ({ product }: ProductDetails) => {
   return (
     <div className="space-y-3">
       <h2 className="text-4xl font-bold">{name}</h2>
-      <ProductReview rate={rate} />
+      <ProductReview rate={rate} rate_count={rate_count} />
       <Price price={price} discount={discount} size="large" />
       <p className="border-t-2 border-zinc-400 pt-3">{details}</p>
       {sizes && (

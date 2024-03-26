@@ -6,4 +6,4 @@ export type CartItemsProps = {
   color: ColorProps;
   size: string;
   quantity: number;
-} & Omit<ProductProps, 'details' | 'rate'>;
+} & Omit<ProductProps, 'details' | 'rate' | 'rate_count'>;
