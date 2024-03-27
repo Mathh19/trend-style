@@ -7,7 +7,7 @@ import { FiHeart, FiShoppingCart, FiUser } from 'react-icons/fi';
 import { ShoppingCartContext } from '@contexts/ShoppingCartContext/ShoppingCartContext';
 import { WishlistContext } from '@contexts/WishlistContext/WishlistContext';
 
-import { CustomBadge } from './CustomBadge';
+import { Badge } from './UI/Badge';
 
 export const UserHub = () => {
   const { products } = useContext(WishlistContext);
@@ -24,14 +24,14 @@ export const UserHub = () => {
         <FiUser size={22} />
       </Link>
       <Link title="my wishlist" href="/wishlist" className="flex">
-        <CustomBadge badgeContent={countWishlist}>
+        <Badge value={countWishlist}>
           <FiHeart size={22} />
-        </CustomBadge>
+        </Badge>
       </Link>
       <Link title="shopping cart" href="/cart" className="flex">
-        <CustomBadge badgeContent={totalItems}>
+        <Badge value={totalItems}>
           <FiShoppingCart size={22} />
-        </CustomBadge>
+        </Badge>
       </Link>
     </>
   );
