@@ -5,6 +5,7 @@ import './globals.css';
 import { GoToTop } from '@components/GoToTop';
 import { Footer } from '@components/Layout/Footer';
 import { Header } from '@components/Layout/Header';
+import { TooltipProvider } from '@components/UI/Tooltip';
 import { ShoppingCartProvider } from '@contexts/ShoppingCartContext/ShoppingCartContext';
 import { WishlistProvider } from '@contexts/WishlistContext/WishlistContext';
 
@@ -24,14 +25,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <WishlistProvider>
-          <ShoppingCartProvider>
-            <Header />
-            <main>{children}</main>
-            <Footer />
-            <GoToTop />
-          </ShoppingCartProvider>
-        </WishlistProvider>
+        <TooltipProvider delayDuration={200}>
+          <WishlistProvider>
+            <ShoppingCartProvider>
+              <Header />
+              <main>{children}</main>
+              <Footer />
+              <GoToTop />
+            </ShoppingCartProvider>
+          </WishlistProvider>
+        </TooltipProvider>
       </body>
     </html>
   );

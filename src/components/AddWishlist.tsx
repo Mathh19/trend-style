@@ -8,7 +8,7 @@ import { VariantProps, tv } from 'tailwind-variants';
 
 import { ProductProps } from '@shared-types/product';
 
-import { CustomTooltip } from './CustomTooltip';
+import { Tooltip, TooltipContent, TooltipTrigger } from './UI/Tooltip';
 
 const inputHeart = tv({
   base: 'relative text-2xl text-red-500 flex items-center justify-center w-8 h-8',
@@ -51,23 +51,26 @@ export const AddWishlist = ({ product, background }: AddWishlistProps) => {
   }, [product.id, products]);
 
   return (
-    <CustomTooltip title={tooltipMessage}>
-      <div
-        className={inputHeart({
-          background,
-          class: `${toggle && 'text-red-500'}`
-        })}
-      >
-        <input
-          aria-label={tooltipMessage}
-          type="checkbox"
-          id={`wishlist-${product.id}`}
-          checked={toggle}
-          onChange={handleToggle}
-          className="absolute inset-0 opacity-0 cursor-pointer"
-        />
-        {toggle ? <IoMdHeart /> : <IoIosHeartEmpty />}
-      </div>
-    </CustomTooltip>
+    <Tooltip>
+      <TooltipTrigger>
+        <div
+          className={inputHeart({
+            background,
+            class: `${toggle && 'text-red-500'}`
+          })}
+        >
+          <input
+            aria-label={tooltipMessage}
+            type="checkbox"
+            id={`wishlist-${product.id}`}
+            checked={toggle}
+            onChange={handleToggle}
+            className="absolute inset-0 opacity-0 cursor-pointer"
+          />
+          {toggle ? <IoMdHeart /> : <IoIosHeartEmpty />}
+        </div>
+      </TooltipTrigger>
+      <TooltipContent>{tooltipMessage}</TooltipContent>
+    </Tooltip>
   );
 };
