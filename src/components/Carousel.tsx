@@ -32,10 +32,10 @@ export const Carousel = () => {
   };
 
   return (
-    <div className="flex items-center w-full m-auto relative group">
+    <div className="flex items-center w-full m-auto relative">
       <img
         src={`${images[currentIndex].url}`}
-        className="w-full"
+        className="w-full max-h-[450px] object-center object-cover"
         alt={images[currentIndex].description}
       />
       <button
