@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useContext } from 'react';
 
+import { Price } from '@components/UI/Price';
 import { ShoppingCartContext } from '@contexts/ShoppingCartContext/ShoppingCartContext';
 
 import { CartItem } from '../CartItem';
@@ -28,12 +29,18 @@ export const Cart = () => {
                 <CartItem.Image img={cartItem.img[0]} alt={cartItem.name} />
                 <CartItem.Content>
                   <div className="flex flex-col h-full justify-between">
-                    <Link
-                      href={`/product/${cartItem.id}`}
-                      className="font-semibold hover:underline"
-                    >
-                      {cartItem.name}
-                    </Link>
+                    <div>
+                      <Link
+                        href={`/product/${cartItem.id}`}
+                        className="font-semibold hover:underline"
+                      >
+                        {cartItem.name}
+                      </Link>
+                      <Price
+                        price={cartItem.price}
+                        discount={cartItem.discount}
+                      />
+                    </div>
                     <CartItem.Controller product={cartItem} />
                   </div>
                 </CartItem.Content>

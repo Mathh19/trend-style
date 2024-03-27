@@ -47,7 +47,10 @@ export const Selector = ({
 
   return (
     <div className="relative max-w-[90px]">
-      <div className="cursor-default bg-white w-full flex items-center justify-between gap-2 border border-black rounded-full px-1.5 py-[2px]">
+      <div
+        onClick={() => setOpen(!open)}
+        className="cursor-pointer bg-white w-full flex items-center justify-between gap-2 border border-black rounded-full px-1.5 py-1"
+      >
         <div className="flex justify-center items-center gap-1">
           {typeof actualValue !== 'string' && (
             <div
@@ -76,7 +79,7 @@ export const Selector = ({
                 onClick={() => {
                   handleUpdateProduct({ ...product, color: color });
                 }}
-                className="px-1 cursor-default hover:bg-zinc-300"
+                className="p-1 cursor-default hover:bg-zinc-300"
                 key={color.hex}
               >
                 {color.name}
@@ -86,7 +89,7 @@ export const Selector = ({
             sizes.map((size) => (
               <li
                 onClick={() => handleUpdateProduct({ ...product, size: size })}
-                className="px-1 cursor-default hover:bg-zinc-300"
+                className="p-1 cursor-default hover:bg-zinc-300"
                 key={size}
               >
                 {size}

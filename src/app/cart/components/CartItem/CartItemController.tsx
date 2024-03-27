@@ -3,7 +3,6 @@
 import { useContext } from 'react';
 import { FaTrash } from 'react-icons/fa6';
 
-import { Price } from '@components/UI/Price';
 import { ShoppingCartContext } from '@contexts/ShoppingCartContext/ShoppingCartContext';
 
 import { CartItemsProps } from '@shared-types/cart-items';
@@ -28,7 +27,7 @@ export const CartItemController = ({ product }: CartItemControllerProps) => {
 
   return (
     <>
-      <div className="flex flex-1 flex-wrap mt-1 gap-2">
+      <div className="flex flex-1 flex-wrap gap-2.5">
         <Selector
           product={product}
           actualValue={product.color}
@@ -41,13 +40,10 @@ export const CartItemController = ({ product }: CartItemControllerProps) => {
         />
       </div>
       <div className="w-full flex flex-wrap items-center justify-between">
-        <div>
-          <Price price={product.price} discount={product.discount} />
-        </div>
-        <div className="flex gap-2">
+        <div className="flex justify-between w-full gap-4">
           <InputQuantity product={product} />{' '}
           <button onClick={() => deleteItem(product.cartId)}>
-            <FaTrash />
+            <FaTrash size={20} />
           </button>
         </div>
       </div>

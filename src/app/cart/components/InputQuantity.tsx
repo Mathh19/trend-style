@@ -50,7 +50,7 @@ export const InputQuantity = ({ product }: InputQuantityProps) => {
         <button
           disabled={productQuantity <= 1}
           onClick={decrementQuantity}
-          className="bg-black flex items-center justify-center text-white w-5 h-5 disabled:bg-zinc-300"
+          className="bg-black flex items-center justify-center text-white w-7 h-7 disabled:bg-zinc-300"
         >
           -
         </button>
@@ -62,12 +62,12 @@ export const InputQuantity = ({ product }: InputQuantityProps) => {
           onFocus={() => setIsInputFocused(true)}
           value={productQuantity}
           onChange={handleChange}
-          className="border text-xs text-center border-black w-5 h-5"
+          className="border text-xs text-center border-black w-7 h-7"
         />
         <button
           disabled={checkQuantityStock(product.id, 1)}
           onClick={incrementQuantity}
-          className="bg-black flex items-center justify-center text-white w-5 h-5 disabled:bg-zinc-300"
+          className="bg-black flex items-center justify-center text-white w-7 h-7 disabled:bg-zinc-300"
         >
           +
         </button>
