@@ -7,11 +7,13 @@ import { FiHeart, FiShoppingCart, FiUser } from 'react-icons/fi';
 import { ShoppingCartContext } from '@contexts/ShoppingCartContext/ShoppingCartContext';
 import { WishlistContext } from '@contexts/WishlistContext/WishlistContext';
 
+import { DisplayItems } from './DisplayItems';
 import { Badge } from './UI/Badge';
+import { Tooltip, TooltipContent, TooltipTrigger } from './UI/Tooltip';
 
 export const UserHub = () => {
   const { products } = useContext(WishlistContext);
-  const { totalItems } = useContext(ShoppingCartContext);
+  const { totalItems, cartItems } = useContext(ShoppingCartContext);
   const [countWishlist, setCountWishlist] = useState(0);
 
   useEffect(() => {
@@ -20,19 +22,42 @@ export const UserHub = () => {
 
   return (
     <>
-      <Link title="profile" href="/" className="flex">
-        <FiUser size={22} />
-      </Link>
-      <Link title="my wishlist" href="/wishlist" className="flex">
-        <Badge value={countWishlist}>
-          <FiHeart size={22} />
-        </Badge>
-      </Link>
-      <Link title="shopping cart" href="/cart" className="flex">
-        <Badge value={totalItems}>
-          <FiShoppingCart size={22} />
-        </Badge>
-      </Link>
+      <Tooltip>
+        <Link href="/">
+          <TooltipTrigger>
+            <FiUser size={22} />
+          </TooltipTrigger>
+          <TooltipContent>My profile</TooltipContent>
+        </Link>
+      </Tooltip>
+      <Tooltip>
+        <Link href="/wishlist">
+          <TooltipTrigger>
+            <Badge value={countWishlist}>
+              <FiHeart size={22} />
+            </Badge>
+          </TooltipTrigger>
+          {products.length > 0 && (
+            <TooltipContent className="px-1">
+              <DisplayItems items={products} />
+            </TooltipContent>
+          )}
+        </Link>
+      </Tooltip>
+      <Tooltip>
+        <Link href="/cart">
+          <TooltipTrigger>
+            <Badge value={totalItems}>
+              <FiShoppingCart size={22} />
+            </Badge>
+          </TooltipTrigger>
+          {cartItems.length > 0 && (
+            <TooltipContent className="px-1">
+              <DisplayItems items={cartItems} />
+            </TooltipContent>
+          )}
+        </Link>
+      </Tooltip>
     </>
   );
 };
