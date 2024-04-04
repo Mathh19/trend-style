@@ -3,23 +3,23 @@ import Image from 'next/image';
 import { Rating } from '@components/Rating';
 
 export type CommentProps = {
+  id: string;
   avatar: string;
   username: string;
-  clientInfo: {
-    height: number;
-    weight: number;
-  };
+  height: number;
+  weight: number;
+  rate: number;
+  comment: string;
   productInfo: {
     size: string;
     color: string;
   };
-  rate: number;
-  comment: string;
 };
 
 export const Comment = ({
   avatar,
-  clientInfo,
+  height,
+  weight,
   productInfo,
   username,
   comment,
@@ -27,18 +27,18 @@ export const Comment = ({
 }: CommentProps) => {
   return (
     <div className="pt-6 space-y-1">
-      <div className="flex items-center gap-4">
+      <div className="flex items-center gap-2">
         <Image
           src={avatar}
           alt="avatar user"
           width={50}
           height={50}
-          className="rounded-full"
+          className="rounded-full border border-black"
         />
         <p className="font-bold">{username}</p>
       </div>
       <span className="block text-zinc-600">
-        Client info: Height: {clientInfo.height}cm | Weight: {clientInfo.weight}
+        Client info: Height: {height}cm | Weight: {weight}
         Kg
       </span>
       <span className="block text-zinc-600">
