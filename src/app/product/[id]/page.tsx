@@ -1,6 +1,6 @@
 import { StyleSuggestor } from '@components/StyleSuggestor';
 
-import { Product } from '../components/Product/Product';
+import { Product } from '../../../components/Product/Product';
 import { WrapperComments } from '../components/WrapperComments';
 
 export default function ProductPage({ params }: { params: { id: string } }) {

@@ -13,8 +13,7 @@ export const Colors = ({ colors, onColorChange }: ColorComponentProps) => {
   };
 
   return (
-    <div className="flex flex-col gap-2">
-      <p className="text-4xl font-bold">Color:</p>
+    <div className="flex flex-col gap-1.5">
       <div className="flex gap-2">
         {colors.map((color) => (
           <label

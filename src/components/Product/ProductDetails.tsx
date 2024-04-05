@@ -103,26 +103,33 @@ export const ProductDetails = ({ product }: ProductDetails) => {
   };
 
   return (
-    <div className="space-y-3">
-      <h2 className="text-4xl font-bold">{name}</h2>
-      <Rating rate={rate} rate_count={rate_count} />
-      <Price price={price} discount={discount} size="large" />
-      <p className="border-t-2 border-zinc-400 pt-3">{details}</p>
-      {sizes && (
-        <>
-          <p className="text-4xl font-bold">Size:</p>
-          <div>
-            <Sizes onSizeChange={handleSizeChange} sizes={sizes} />
-            <ErrorMessage message={errors.size} />
-          </div>
-        </>
-      )}
-      <Colors colors={colors} onColorChange={handleColorChange} />
-      <ErrorMessage message={errors.color} />
+    <div className="flex-1 text-left space-y-2">
+      <div className="border-b-2 pb-2 space-y-2 border-zinc-400">
+        <h2 className="text-3xl font-bold">{name}</h2>
+        <Rating rate={rate} rate_count={rate_count} />
+        <Price price={price} discount={discount} size="large" />
+      </div>
+
+      <p>{details}</p>
+
+      <div className="space-y-1">
+        <p className="text-2xl font-semibold">Sizes:</p>
+        <Sizes onSizeChange={handleSizeChange} sizes={sizes} />
+        <ErrorMessage message={errors.size} />
+      </div>
+
+      <div className="space-y-1">
+        <p className="text-2xl font-semibold">Colors:</p>
+        <Colors colors={colors} onColorChange={handleColorChange} />
+        <ErrorMessage message={errors.color} />
+      </div>
+
       <QuantitySelector stock={stock} onQuantityChange={handleQuantityChange} />
       <ErrorMessage message={errors.quantity} />
       <span className="text-sm text-zinc-600">{stock} in stock</span>
+
       <SizeCharts />
+
       <div className="flex items-center gap-4">
         <Button
           onClick={addProductToCart}
