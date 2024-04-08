@@ -30,8 +30,15 @@ export const Price = ({ price, size, discount }: PriceProps) => {
       <p className={`${discount ? 'line-through' : ''}`}>
         {formatCurrency(price)}
       </p>
+
       {priceWithDiscount && (
-        <p className="text-red-700">{formatCurrency(priceWithDiscount)}</p>
+        <div className="flex items-center gap-1">
+          <p className="text-red-700">{formatCurrency(priceWithDiscount)}</p>
+
+          <span className="text-xs text-red-700 border border-red-700 rounded-sm px-1">
+            {discount}%
+          </span>
+        </div>
       )}
     </div>
   );
