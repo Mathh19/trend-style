@@ -1,3 +1,5 @@
+'use client';
+
 import { VariantProps, tv } from 'tailwind-variants';
 
 const content = tv({
