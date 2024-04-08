@@ -18,7 +18,7 @@ export const ProductCard = ({ product }: { product: ProductProps }) => {
       : `/product/${product.id}`;
 
   return (
-    <div className="relative w-72 h-92 border">
+    <div className="relative shadow-md w-72 h-92 border">
       <div className="absolute flex w-full justify-between p-2">
         <AddWishlist product={product} />
         <AddShoppingCart productId={product.id.toString()} />

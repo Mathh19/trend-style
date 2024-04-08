@@ -12,6 +12,7 @@ import { Button } from '@components/UI/Button';
 import { comments } from '@data/comments';
 
 import { Comment, CommentProps } from './Comment';
+import { LoadingComments } from './LoadingComments';
 
 export const WrapperComments = () => {
   const [commentsData, setCommentsData] = useState<CommentProps[]>([]);
@@ -40,7 +41,7 @@ export const WrapperComments = () => {
     setCommentsData(comments);
   }, []);
 
-  if (commentsData.length === 0) return <p>Loading...</p>;
+  if (commentsData.length === 0) return <LoadingComments />;
 
   return (
     <section className="space-y-2.5">
@@ -87,7 +88,7 @@ export const WrapperComments = () => {
             />
           </div>
           <span className="text-xs text-end">
-            {page}...{totalPage} pages
+            page {page} of {totalPage} pages
           </span>
         </div>
       </div>

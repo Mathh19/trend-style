@@ -4,6 +4,7 @@ import products from '@contents/all-products.json';
 import { useProduct } from '@hooks/useProduct';
 
 import { ProductCard } from './ProductCard';
+import { SkeletonProducts } from './UI/SkeletonProducts';
 
 type StyleSuggestorProps = {
   id: string;
@@ -15,7 +16,7 @@ export const StyleSuggestor = ({ id }: StyleSuggestorProps) => {
     (productFilter) => productFilter.category === product?.category
   );
 
-  if (!filteredProducts) return <p>Loading</p>;
+  if (filteredProducts.length === 0) return <SkeletonProducts />;
 
   return (
     <div>
