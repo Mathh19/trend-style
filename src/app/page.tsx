@@ -1,5 +1,6 @@
 import { About } from '@components/About';
-import { Carousel } from '@components/Carousel';
+// import { Carousel } from '@components/Carousel';
+import { CarouselImage } from '@components/CarouselImage';
 import { ContainerProducts } from '@components/ContainerProducts';
 
 import discountProducts from '../contents/discount-products.json';
@@ -9,14 +10,15 @@ import shoes from '../contents/shoes.json';
 export default function Home() {
   return (
     <>
-      <section>
-        <Carousel />
-      </section>
-      <section id="Products">
+      <div>
+        <CarouselImage />
+      </div>
+
+      <div id="Products">
         <ContainerProducts title="New Arrivals" products={newProducts} />
         <ContainerProducts title="Main discounts" products={discountProducts} />
         <ContainerProducts title="Shoes" products={shoes} />
-      </section>
+      </div>
       <About />
     </>
   );
