@@ -4,9 +4,10 @@ import { calculateDiscount } from '@utils/calculate-discount';
 import { formatCurrency } from '@utils/format-currency';
 
 const div = tv({
-  base: 'flex gap-2.5',
+  base: 'flex items-center gap-2',
   variants: {
     size: {
+      small: 'text-sm',
       default: 'text-base',
       medium: 'text-xl font-semibold',
       large: 'text-2xl font-bold'

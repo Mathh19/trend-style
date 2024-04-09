@@ -5,10 +5,10 @@ import { useCallback, useContext, useState } from 'react';
 import { AddWishlist } from '@components/AddWishlist';
 import { ErrorMessage } from '@components/ErrorMessage';
 import { QuantitySelector } from '@components/QuantitySelector';
-import { Rating } from '@components/Rating';
 import { SizeCharts } from '@components/SizeCharts/SizeCharts';
 import { Button } from '@components/UI/Button';
 import { Price } from '@components/UI/Price';
+import { Rating } from '@components/UI/Rating';
 import { ShoppingCartContext } from '@contexts/ShoppingCartContext/ShoppingCartContext';
 import { v4 as uuidv4 } from 'uuid';
 

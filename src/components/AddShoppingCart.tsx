@@ -20,11 +20,12 @@ export const AddShoppingCart = ({ productId }: AddShoppingCartProps) => {
       <Button
         aria-label="add to shopping cart"
         onClick={() => setOpen(true)}
-        className="group bg-white border border-black p-1 rounded-md text-black text-2xl"
+        className="group bg-white border border-black p-1 rounded text-black text-lg"
         icon={
           <TbShoppingCartPlus className="transition-all group-hover:scale-110" />
         }
       />
+
       <Modal.Root size="full" isOpen={open} setOpen={() => setOpen(false)}>
         <Modal.Header>
           <div className="flex w-full justify-end">

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import { Rating } from '@components/Rating';
+import { Rating } from '@components/UI/Rating';
 
 export type CommentProps = {
   id: string;
