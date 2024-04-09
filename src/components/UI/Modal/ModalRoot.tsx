@@ -1,5 +1,7 @@
 'use client';
 
+import { useEffect } from 'react';
+
 import { VariantProps, tv } from 'tailwind-variants';
 
 const content = tv({
@@ -33,8 +35,10 @@ export const ModalRoot = ({
   overflow,
   children
 }: ModalRootProps) => {
-  if (isOpen) document.body.style.overflow = 'hidden';
-  if (!isOpen) document.body.style.overflow = 'unset';
+  useEffect(() => {
+    if (isOpen) document.body.style.overflow = 'hidden';
+    if (!isOpen) document.body.style.overflow = 'unset';
+  }, [isOpen]);
 
   return (
     <>
