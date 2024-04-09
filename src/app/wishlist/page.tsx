@@ -1,19 +1,18 @@
 'use client';
 
-import { useContext, useEffect, useRef, useState } from 'react';
+import { useContext, useRef, useState } from 'react';
 import { HiOutlineInbox } from 'react-icons/hi2';
 import { IoIosCloseCircleOutline } from 'react-icons/io';
 
 import { ContainerProducts } from '@components/ContainerProducts';
 import { WishlistContext } from '@contexts/WishlistContext/WishlistContext';
 
-import { ProductProps } from '@shared-types/product';
-
 export default function Wishlist() {
   const { products, clearWishList } = useContext(WishlistContext);
   const [limitProduct, setLimitProduct] = useState(6);
-  const [maxProducts, setMaxProducts] = useState<ProductProps[]>([]);
   const buttonRef = useRef<HTMLButtonElement>(null);
+
+  const maxProducts = products.slice(0, limitProduct);
 
   const handleIncreaseLimit = () => {
     setLimitProduct((prevLimitProduct) => prevLimitProduct + 3);
@@ -24,13 +23,10 @@ export default function Wishlist() {
     }, 180);
   };
 
-  useEffect(() => {
-    setMaxProducts(products.slice(0, limitProduct));
-  }, [limitProduct, products]);
-
   return (
     <div className="flex flex-col items-center min-h-screen gap-4 px-14">
       <h2 className="text-center uppercase font-bold text-3xl">My wishlist</h2>
+
       {products.length === 0 ? (
         <div className="flex flex-col items-center">
           <p className="text-2xl">You have no products in your wish list</p>
@@ -47,7 +43,9 @@ export default function Wishlist() {
               <IoIosCloseCircleOutline />
             </button>
           </div>
+
           <ContainerProducts products={maxProducts} />
+
           {products.length !== maxProducts.length && (
             <button
               ref={buttonRef}

@@ -19,7 +19,8 @@ export const WishlistProvider = ({
     'wishlist',
     []
   );
-  const [products, setProducts] = useState<ProductProps[]>(storedValue);
+
+  const [products, setProducts] = useState<ProductProps[]>([]);
 
   const addProducts = (product: ProductProps) => {
     setProducts((products) => {
@@ -27,23 +28,26 @@ export const WishlistProvider = ({
         (filterProduct) => filterProduct.id === product.id
       );
       if (filterProducts.length > 0) return products;
+      setValue([...products, product]);
       return [...products, product];
     });
   };
 
   const removeProduct = (id: number) => {
-    setProducts((products) => {
-      return products.filter((product) => product.id !== id);
-    });
+    const filteredProducts = products.filter((product) => product.id !== id);
+
+    setValue(filteredProducts);
+    setProducts(filteredProducts);
   };
 
   const clearWishList = () => {
+    setValue([]);
     setProducts([]);
   };
 
   useEffect(() => {
-    setValue(products);
-  }, [products, setValue]);
+    if (storedValue.length > 0) setProducts(storedValue);
+  }, [storedValue]);
 
   return (
     <WishlistContext.Provider
