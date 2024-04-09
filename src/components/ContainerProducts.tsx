@@ -20,10 +20,10 @@ export const ContainerProducts = ({
     );
 
   return (
-    <div className="text-center space-y-7 py-11">
+    <div className="max-w-4xl text-center m-auto space-y-5 py-10">
       {title && <h2 className="text-4xl font-semibold">{title}</h2>}
 
-      <div className="flex justify-around w-full flex-wrap gap-16">
+      <div className="flex w-full justify-center flex-wrap gap-5">
         {products.map((product) => (
           <ProductCard key={product.id} product={product} />
         ))}
