@@ -1,13 +1,13 @@
+'use client';
+
 import { About } from '@components/About';
-// import { Carousel } from '@components/Carousel';
 import { CarouselImage } from '@components/CarouselImage';
 import { ContainerProducts } from '@components/ContainerProducts';
-
-import discountProducts from '../contents/discount-products.json';
-import newProducts from '../contents/new-products.json';
-import shoes from '../contents/shoes.json';
+import { useProducts } from '@hooks/useProducts';
 
 export default function Home() {
+  const { products, discountedProducts, filteredByCategory } = useProducts();
+
   return (
     <>
       <div>
@@ -15,9 +15,24 @@ export default function Home() {
       </div>
 
       <div id="Products">
-        <ContainerProducts title="New Arrivals" products={newProducts} />
-        <ContainerProducts title="Main discounts" products={discountProducts} />
-        <ContainerProducts title="Shoes" products={shoes} />
+        <ContainerProducts
+          title="New Arrivals"
+          products={products.slice(0, 3)}
+        />
+        <div id="Promotions">
+          <ContainerProducts
+            title="Main discounts"
+            products={discountedProducts}
+          />
+        </div>
+        <ContainerProducts
+          title="Shirts"
+          products={filteredByCategory('shirt')}
+        />
+        <ContainerProducts
+          title="Shoes"
+          products={filteredByCategory('shoes')}
+        />
       </div>
       <About />
     </>

@@ -1,7 +1,7 @@
 'use client';
 
-import products from '@contents/all-products.json';
 import { useProduct } from '@hooks/useProduct';
+import { useProducts } from '@hooks/useProducts';
 
 import { ProductCard } from './ProductCard';
 import { SkeletonProducts } from './UI/SkeletonProducts';
@@ -12,6 +12,8 @@ type StyleSuggestorProps = {
 
 export const StyleSuggestor = ({ id }: StyleSuggestorProps) => {
   const { product } = useProduct(id);
+  const { products } = useProducts();
+
   const filteredProducts = products.filter(
     (productFilter) => productFilter.category === product?.category
   );

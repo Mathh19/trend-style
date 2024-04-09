@@ -1,6 +1,6 @@
-import { CartItemsProps } from '@shared-types/cart-items';
+import { products } from '@data/products';
 
-import products from '../../../contents/all-products.json';
+import { CartItemsProps } from '@shared-types/cart-items';
 
 export const checkQuantityStock = (productId: number, quantity: number) => {
   const product = products.find((element) => element.id === productId);
