@@ -3,6 +3,7 @@
 import { About } from '@components/About';
 import { CarouselImage } from '@components/CarouselImage';
 import { ContainerProducts } from '@components/ContainerProducts';
+import { DiscountSection } from '@components/DiscountSection';
 import { useProducts } from '@hooks/useProducts';
 
 export default function Home() {
@@ -19,12 +20,9 @@ export default function Home() {
           title="New Arrivals"
           products={products.slice(0, 3)}
         />
-        <div id="Promotions">
-          <ContainerProducts
-            title="Main discounts"
-            products={discountedProducts}
-          />
-        </div>
+
+        <DiscountSection products={discountedProducts} />
+
         <ContainerProducts
           title="Shirts"
           products={filteredByCategory('shirt')}
