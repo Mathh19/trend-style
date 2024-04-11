@@ -20,7 +20,7 @@ export const ContainerProducts = ({
     );
 
   return (
-    <div className="max-w-4xl text-center m-auto space-y-5 py-10">
+    <div className="max-w-4xl text-center m-auto space-y-5 px-4 py-10">
       {title && <h2 className="text-4xl font-semibold">{title}</h2>}
 
       <div className="flex w-full justify-center flex-wrap gap-5">

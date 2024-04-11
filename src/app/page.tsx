@@ -4,6 +4,7 @@ import { About } from '@components/About';
 import { CarouselImage } from '@components/CarouselImage';
 import { ContainerProducts } from '@components/ContainerProducts';
 import { DiscountSection } from '@components/DiscountSection';
+import { SearchProducts } from '@components/SearchProducts';
 import { useProducts } from '@hooks/useProducts';
 
 export default function Home() {
@@ -11,6 +12,8 @@ export default function Home() {
 
   return (
     <>
+      <SearchProducts />
+
       <div>
         <CarouselImage />
       </div>
