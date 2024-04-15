@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
@@ -24,7 +25,13 @@ export const ProductCard = ({ product }: { product: ProductProps }) => {
         <AddShoppingCart productId={product.id.toString()} />
       </div>
 
-      <img src={product.img[0]} alt={product.name} className="w-full h-full" />
+      <Image
+        src={product.img[0]}
+        alt={product.name}
+        width={500}
+        height={500}
+        className="w-full h-full"
+      />
 
       <Link href={link} className="group">
         <div className="absolute bg-white w-full bottom-0 p-2 space-y-1">

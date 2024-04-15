@@ -9,8 +9,8 @@ export const products = [
     ],
     discount: 30,
     img: [
-      '/products/heart-print-sweatshirt-1.png',
-      '/products/heart-print-sweatshirt-2.png'
+      'https://res.cloudinary.com/ddiiakz1t/image/upload/v1712770879/trend-styles/heart-print-sweatshirt-1_voxv5k.png',
+      'https://res.cloudinary.com/ddiiakz1t/image/upload/v1712770880/trend-styles/heart-print-sweatshirt-2_l6zy6v.png'
     ],
     rate: 4.7,
     rate_count: 200,
@@ -30,8 +30,8 @@ export const products = [
     ],
     discount: 20,
     img: [
-      '/products/long-sleeve-shirt-faces-1.png',
-      '/products/long-sleeve-shirt-faces-2.png'
+      'https://res.cloudinary.com/ddiiakz1t/image/upload/v1712770883/trend-styles/long-sleeve-shirt-faces-1_zue49k.png',
+      'https://res.cloudinary.com/ddiiakz1t/image/upload/v1712770882/trend-styles/long-sleeve-shirt-faces-2_h65nqr.png'
     ],
     rate: 4,
     rate_count: 500,
@@ -47,7 +47,9 @@ export const products = [
     price: 100,
     colors: [{ name: 'Beige', hex: '#DAB27D' }],
     discount: 50,
-    img: ['/products/beige-coat.png'],
+    img: [
+      'https://res.cloudinary.com/ddiiakz1t/image/upload/v1712770876/trend-styles/beige-coat_hrrlxt.png'
+    ],
     rate: 4.4,
     rate_count: 1000,
     category: 'shirt',
@@ -64,7 +66,9 @@ export const products = [
       { name: 'Black', hex: '#000000' },
       { name: 'White', hex: '#ffffff' }
     ],
-    img: ['/products/t-shirt-alien.png'],
+    img: [
+      'https://res.cloudinary.com/ddiiakz1t/image/upload/v1712770884/trend-styles/t-shirt-alien_lnfcgw.png'
+    ],
     rate: 4,
     rate_count: 55,
     category: 'shirt',
@@ -82,8 +86,8 @@ export const products = [
       { name: 'White', hex: '#ffffff' }
     ],
     img: [
-      '/products/t-shirt-skull-hands-1.png',
-      '/products/t-shirt-skull-hands-2.png'
+      'https://res.cloudinary.com/ddiiakz1t/image/upload/v1712770887/trend-styles/t-shirt-skull-hands-1_dornei.png',
+      'https://res.cloudinary.com/ddiiakz1t/image/upload/v1712770888/trend-styles/t-shirt-skull-hands-2_zitocu.png'
     ],
     rate: 3.8,
     rate_count: 88,
@@ -101,7 +105,9 @@ export const products = [
       { name: 'Black', hex: '#000000' },
       { name: 'White', hex: '#ffffff' }
     ],
-    img: ['/products/t-shirt-black.png'],
+    img: [
+      'https://res.cloudinary.com/ddiiakz1t/image/upload/v1712770886/trend-styles/t-shirt-black_tz4wkk.png'
+    ],
     rate: 4.5,
     rate_count: 1155,
     category: 'shirt',
@@ -116,7 +122,10 @@ export const products = [
     price: 81.3,
     colors: [{ name: 'Black', hex: '#000000' }],
     discount: 10,
-    img: ['/products/vans-1.png', '/products/vans-2.png'],
+    img: [
+      'https://res.cloudinary.com/ddiiakz1t/image/upload/v1712770889/trend-styles/vans-1_xgq2uw.png',
+      'https://res.cloudinary.com/ddiiakz1t/image/upload/v1712770890/trend-styles/vans-2_ihmyqa.png'
+    ],
     rate: 4.9,
     rate_count: 887,
     category: 'shoes',
@@ -143,7 +152,9 @@ export const products = [
     name: 'Black boots',
     price: 75.5,
     colors: [{ name: 'Black', hex: '#000000' }],
-    img: ['/products/black-boots.png'],
+    img: [
+      'https://res.cloudinary.com/ddiiakz1t/image/upload/v1712770877/trend-styles/black-boots_arggfy.png'
+    ],
     rate: 3.8,
     rate_count: 243,
     category: 'shoes',
@@ -171,7 +182,9 @@ export const products = [
     price: 77.8,
     colors: [{ name: 'Black', hex: '#000000' }],
     discount: 15,
-    img: ['/products/ankle-boots.png'],
+    img: [
+      'https://res.cloudinary.com/ddiiakz1t/image/upload/v1712770876/trend-styles/ankle-boots_hg5j44.png'
+    ],
     rate: 4.6,
     rate_count: 555,
     category: 'shoes',
