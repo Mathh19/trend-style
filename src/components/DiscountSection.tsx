@@ -1,7 +1,4 @@
-'use client';
-
 import { Metal_Mania } from 'next/font/google';
-import { useEffect, useState } from 'react';
 
 import { ProductProps } from '@shared-types/product';
 
@@ -13,7 +10,6 @@ import {
   CarouselNext,
   CarouselPrevious
 } from './UI/Carousel';
-import { Skeleton } from './UI/Skeleton';
 import { SkeletonProducts } from './UI/SkeletonProducts';
 
 type DiscountSectionProps = {
@@ -27,32 +23,11 @@ const metalFont = Metal_Mania({
 });
 
 export const DiscountSection = ({ products }: DiscountSectionProps) => {
-  const [discount, setDiscount] = useState({
-    min: 0,
-    max: 0
-  });
-
-  useEffect(() => {
-    const discountedProducts = products.map((product) => product.discount);
-    setDiscount({
-      max: Math.max(...(discountedProducts as number[])),
-      min: Math.min(...(discountedProducts as number[]))
-    });
-  }, [products]);
-
   return (
     <section id="Promotions" className="bg-black py-16 px-4 space-y-10">
       <h2 className={`${metalFont.className} text-white text-center text-6xl`}>
         Promotions
       </h2>
-
-      {products.length === 0 ? (
-        <Skeleton className="max-w-[90px] m-auto h-5" />
-      ) : (
-        <p className="text-center text-lg text-white">
-          Discounts {discount.min}%-{discount.max}%
-        </p>
-      )}
 
       {products.length === 0 ? (
         <SkeletonProducts />
