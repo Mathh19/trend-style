@@ -26,7 +26,7 @@ export const DiscountSection = ({ products }: DiscountSectionProps) => {
   return (
     <section id="Promotions" className="bg-black py-16 px-4 space-y-10">
       <h2 className={`${metalFont.className} text-white text-center text-6xl`}>
-        Promotions
+        Main Discounts
       </h2>
 
       {products.length === 0 ? (

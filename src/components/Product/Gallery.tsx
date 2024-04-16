@@ -42,7 +42,7 @@ export const Gallery = ({ images, description }: GalleryProps) => {
               onMouseOver={() => handleMouseOver(`image-${index}`)}
               className={`${
                 selectedImage === image &&
-                'outline rounded-sm outline-offset-1 outline-black'
+                'outline outline-offset-1 outline-black'
               }`}
             >
               <Image
@@ -51,7 +51,6 @@ export const Gallery = ({ images, description }: GalleryProps) => {
                 alt={description}
                 width={80}
                 height={80}
-                className="rounded-sm"
               />
             </div>
           ))}
@@ -65,7 +64,6 @@ export const Gallery = ({ images, description }: GalleryProps) => {
             width={300}
             height={400}
             sizes="(max-width: 762px) 100vw"
-            className="rounded-lg"
           />
 
           <div className="absolute px-1.5 w-full flex justify-between">
@@ -74,14 +72,14 @@ export const Gallery = ({ images, description }: GalleryProps) => {
                 <Button
                   onClick={handlePrevImage}
                   aria-label="see previous image"
-                  icon={<FiChevronLeft size={26} />}
-                  className="bg-white/70 border-2 border-black rounded-full p-0 text-black"
+                  icon={<FiChevronLeft size={26} className="stroke-1" />}
+                  className="bg-white/70 border border-black rounded-full p-0 text-black"
                 />
                 <Button
                   onClick={handleNextImage}
                   aria-label="see later image"
-                  icon={<FiChevronRight size={26} />}
-                  className="bg-white/70 border-2 border-black rounded-full p-0 text-black"
+                  icon={<FiChevronRight size={26} className="stroke-1" />}
+                  className="bg-white/70 border border-black rounded-full p-0 text-black"
                 />
               </>
             )}
