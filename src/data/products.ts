@@ -60,14 +60,11 @@ export const products = [
   },
   {
     id: 8,
-    name: 'T-shirt - alien',
+    name: 'long-sleeved shirt',
     price: 23,
-    colors: [
-      { name: 'Black', hex: '#000000' },
-      { name: 'White', hex: '#ffffff' }
-    ],
+    colors: [{ name: 'Black', hex: '#000000' }],
     img: [
-      'https://res.cloudinary.com/ddiiakz1t/image/upload/v1712770884/trend-styles/t-shirt-alien_lnfcgw.png'
+      'https://res.cloudinary.com/ddiiakz1t/image/upload/v1713288037/trend-styles/image_8_glpexl.png'
     ],
     rate: 4,
     rate_count: 55,
@@ -205,5 +202,21 @@ export const products = [
       'EUR47'
     ],
     stock: 23
+  },
+  {
+    id: 14,
+    name: 'Creepy Shirt',
+    price: 33,
+    colors: [{ name: 'Black', hex: '#000000' }],
+    img: [
+      'https://res.cloudinary.com/ddiiakz1t/image/upload/v1713288287/trend-styles/image_9_wzjvrx.png'
+    ],
+    rate: 4,
+    rate_count: 57,
+    category: 'shirt',
+    details:
+      'Crustulum crastinus enim statim. Tabernus addo tempora subito torqueo accedo ocer cruentus. Condico attollo aequus soleo.',
+    sizes: ['S', 'M', 'L', 'XL'],
+    stock: 66
   }
 ];
