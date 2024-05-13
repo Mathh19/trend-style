@@ -1,6 +1,7 @@
 'use client';
 
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
+import { createPortal } from 'react-dom';
 
 import { VariantProps, tv } from 'tailwind-variants';
 
@@ -42,19 +43,21 @@ export const ModalRoot = ({
 
   return (
     <>
-      {isOpen && (
-        <div
-          onClick={setOpen}
-          className="fixed min-h-screen inset-0 z-[80] flex items-center justify-center bg-black/60 px-4"
-        >
+      {isOpen &&
+        createPortal(
           <div
-            onClick={(e) => e.stopPropagation()}
-            className={content({ size, overflow })}
+            onClick={setOpen}
+            className="fixed min-h-screen inset-0 z-[80] flex items-center justify-center bg-black/60 px-10"
           >
-            {children}
-          </div>
-        </div>
-      )}
+            <div
+              onClick={(e) => e.stopPropagation()}
+              className={content({ size, overflow })}
+            >
+              {children}
+            </div>
+          </div>,
+          document.body
+        )}
     </>
   );
 };
