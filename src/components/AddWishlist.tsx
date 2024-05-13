@@ -4,32 +4,16 @@ import { useContext, useEffect, useState } from 'react';
 import { IoIosHeartEmpty, IoMdHeart } from 'react-icons/io';
 
 import { WishlistContext } from '@contexts/WishlistContext/WishlistContext';
-import { VariantProps, tv } from 'tailwind-variants';
 
 import { ProductProps } from '@shared-types/product';
 
-import { Tooltip, TooltipContent, TooltipTrigger } from './UI/Tooltip';
-
-const inputHeart = tv({
-  base: 'relative text-2xl text-red-500 flex items-center justify-center w-8 h-8',
-  variants: {
-    background: {
-      transparent: 'bg-transparent',
-      white: 'bg-white border border-black rounded-full text-black'
-    }
-  },
-  defaultVariants: {
-    background: 'transparent'
-  }
-});
-
 type AddWishlistProps = {
   product: ProductProps;
-} & VariantProps<typeof inputHeart>;
+};
 
-export const AddWishlist = ({ product, background }: AddWishlistProps) => {
+export const AddWishlist = ({ product }: AddWishlistProps) => {
   const { products, addProducts, removeProduct } = useContext(WishlistContext);
-  const [tooltipMessage, setTooltipMessage] = useState('add to wishlist');
+  const [ariaLabel, setAriaLabel] = useState('add to wishlist');
   const [toggle, setToggle] = useState(false);
 
   const handleToggle = () => {
@@ -43,34 +27,31 @@ export const AddWishlist = ({ product, background }: AddWishlistProps) => {
     );
     if (hasProduct) {
       setToggle(true);
-      setTooltipMessage('remove from your wish list.');
+      setAriaLabel('remove from your wish list.');
     } else {
       setToggle(false);
-      setTooltipMessage('add to your wish list.');
+      setAriaLabel('add to your wish list.');
     }
   }, [product.id, products]);
 
   return (
-    <Tooltip>
-      <TooltipTrigger>
-        <div
-          className={inputHeart({
-            background,
-            class: `${toggle && 'text-red-500'}`
-          })}
-        >
-          <input
-            aria-label={tooltipMessage}
-            type="checkbox"
-            id={`wishlist-${product.id}`}
-            checked={toggle}
-            onChange={handleToggle}
-            className="absolute inset-0 opacity-0 cursor-pointer"
-          />
-          {toggle ? <IoMdHeart /> : <IoIosHeartEmpty />}
-        </div>
-      </TooltipTrigger>
-      <TooltipContent>{tooltipMessage}</TooltipContent>
-    </Tooltip>
+    <label
+      data-added={toggle}
+      className='data-[added="true"]:text-red-500 flex justify-center items-center relative cursor-pointer w-9 h-9 border border-zinc-400 rounded-full transition-all duration-300'
+    >
+      <input
+        aria-label={ariaLabel}
+        type="checkbox"
+        checked={toggle}
+        onChange={handleToggle}
+        autoComplete="off"
+        className="appearance-none absolute inset-0 cursor-pointer"
+      />
+      {toggle ? (
+        <IoMdHeart size={30} />
+      ) : (
+        <IoIosHeartEmpty size={30} className="fill-red-500" />
+      )}
+    </label>
   );
 };

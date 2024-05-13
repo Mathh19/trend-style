@@ -136,7 +136,7 @@ export const ProductDetails = ({ product }: ProductDetails) => {
           text="Add to cart"
           className="uppercase shadow-md"
         />
-        <AddWishlist product={product} background="white" />
+        <AddWishlist product={product} />
       </div>
     </div>
   );

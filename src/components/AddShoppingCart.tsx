@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import { TbShoppingCartPlus } from 'react-icons/tb';
 import { VscClose } from 'react-icons/vsc';
 
 import { Product } from './Product/Product';
@@ -18,12 +17,9 @@ export const AddShoppingCart = ({ productId }: AddShoppingCartProps) => {
   return (
     <div>
       <Button
-        aria-label="add to shopping cart"
         onClick={() => setOpen(true)}
-        className="group bg-white border border-black p-1 rounded text-black text-lg"
-        icon={
-          <TbShoppingCartPlus className="transition-all group-hover:scale-110" />
-        }
+        text="Add to cart"
+        className="font-semibold border border-white shadow-md"
       />
 
       <Modal.Root size="full" isOpen={open} setOpen={() => setOpen(false)}>
