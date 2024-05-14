@@ -36,10 +36,10 @@ export const Gallery = ({ images, description }: GalleryProps) => {
         <div className="space-y-1.5">
           {images.map((image, index) => (
             <div
-              id={`image-${index}`}
+              id={`image-${image}-${index}`}
               key={index}
               data-image={image}
-              onMouseOver={() => handleMouseOver(`image-${index}`)}
+              onMouseOver={() => handleMouseOver(`image-${image}-${index}`)}
               className={`${
                 selectedImage === image &&
                 'outline outline-offset-1 outline-black'
