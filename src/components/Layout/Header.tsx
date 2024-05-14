@@ -2,7 +2,7 @@ import { Keania_One } from 'next/font/google';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { MenuLinks } from '@components/MenuLinks/MenuLinks';
+import { MenuLinks } from '@components/MenuLinks';
 import { UserHub } from '@components/UserHub';
 
 const keaniaOne = Keania_One({

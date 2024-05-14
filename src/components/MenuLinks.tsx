@@ -1,10 +1,9 @@
 'use client';
 
+import Link from 'next/link';
 import { useState } from 'react';
 import { FiMenu } from 'react-icons/fi';
 import { IoMdClose } from 'react-icons/io';
-
-import { Links } from './Links';
 
 const links = ['Home', 'Products', 'Promotions', 'About', 'Contact'];
 
@@ -15,9 +14,11 @@ export const MenuLinks = () => {
     <>
       <ul className="flex gap-6 font-medium max-[914px]:hidden">
         {links.map((link) => (
-          <Links key={link} link={link}>
-            {link}
-          </Links>
+          <li key={link}>
+            <Link href={link === 'Contact' ? `#${link}` : `/#${link}`}>
+              {link}
+            </Link>
+          </li>
         ))}
       </ul>
       <button
@@ -34,9 +35,14 @@ export const MenuLinks = () => {
       >
         <ul className="relative flex flex-col justify-center items-center gap-5 text-lg z-50">
           {links.map((link) => (
-            <Links key={link} link={`${link}`} onClick={() => setOpen(false)}>
-              {link}
-            </Links>
+            <li key={link}>
+              <Link
+                href={link === 'Contact' ? `#${link}` : `/#${link}`}
+                onClick={() => setOpen(false)}
+              >
+                {link}
+              </Link>
+            </li>
           ))}
         </ul>
       </div>
