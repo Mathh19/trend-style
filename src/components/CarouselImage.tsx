@@ -26,14 +26,14 @@ export const CarouselImage = () => {
         <CarouselItem>
           <img
             src="./bg-carousel-1.png"
-            className="w-full max-h-[450px] object-center object-cover"
+            className="w-full max-h-[60vh] object-center object-cover"
             alt="Image informing new products with a 30 to 50 percent discount"
           />
         </CarouselItem>
         <CarouselItem>
           <img
             src="./bg-carousel-2.png"
-            className="w-full max-h-[450px] object-center object-cover"
+            className="w-full max-h-[60vh] object-center object-cover"
             alt="Image informing new collections in store"
           />
         </CarouselItem>
